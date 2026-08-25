@@ -1,0 +1,756 @@
+﻿ola_fecha,entidad,cve_inegi,municipio,tipo_pregunta,universo,partido_contexto,actor,valor_pct,muestra_n,margen_error_pct,casa_encuestadora,pagina_fuente,estatus_dato,nota
+2026-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MORENA,32.7,600,4.3,Massive Caller,2,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MC,22.1,600,4.3,Massive Caller,2,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PAN,12.9,600,4.3,Massive Caller,2,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PRI,10.6,600,4.3,Massive Caller,2,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PT,3.6,600,4.3,Massive Caller,2,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PVEM,1.7,600,4.3,Massive Caller,2,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,16.4,600,4.3,Massive Caller,2,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,MIGUEL ÁNGEL MONRAZ IBARRA,21.4,600,4.3,Massive Caller,4,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,DIANA ARACELI GONZÁLEZ MARTÍNEZ,16.1,600,4.3,Massive Caller,4,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,JOSÉ MIGUEL MENDOZA LARA,14.9,600,4.3,Massive Caller,4,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,PAOLA ESPINOSA SÁNCHEZ,7.1,600,4.3,Massive Caller,4,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,CÉSAR MADRIGAL DÍAZ,3.6,600,4.3,Massive Caller,4,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,20.2,600,4.3,Massive Caller,4,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,16.7,600,4.3,Massive Caller,4,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,LAURA HARO RAMÍREZ,31.5,600,4.3,Massive Caller,6,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,HORTENSIA NOROÑA QUEZADA,13.7,600,4.3,Massive Caller,6,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,VERÓNICA FLORES PÉREZ,10.7,600,4.3,Massive Caller,6,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,26.8,600,4.3,Massive Caller,6,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,17.3,600,4.3,Massive Caller,6,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CARLOS LOMELÍ BOLAÑOS,35.8,600,4.3,Massive Caller,8,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CHEMA MARTÍNEZ,16.2,600,4.3,Massive Caller,8,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,ITZUL BARRERA RODRÍGUEZ,14.2,600,4.3,Massive Caller,8,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CARLOS PALACIOS RODRÍGUEZ,10.8,600,4.3,Massive Caller,8,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MERY GÓMEZ POZOS,7.4,600,4.3,Massive Caller,8,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MARIANA FERNÁNDEZ RAMÍREZ,5.4,600,4.3,Massive Caller,8,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,3.4,600,4.3,Massive Caller,8,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,6.8,600,4.3,Massive Caller,8,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,VERÓNICA DELGADILLO GARCÍA,39.6,600,4.3,Massive Caller,10,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,CLEMENTE CASTAÑEDA HOEFLICH,21.7,600,4.3,Massive Caller,10,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,MANUEL ROMO PARRA,2.8,600,4.3,Massive Caller,10,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,17.1,600,4.3,Massive Caller,10,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,18.8,600,4.3,Massive Caller,10,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,SÍ,40.2,600,4.3,Massive Caller,12,LITERAL,
+2026-08-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,NO,59.8,600,4.3,Massive Caller,12,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MORENA,29.7,600,4.3,Massive Caller,72,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MC,26.3,600,4.3,Massive Caller,72,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PAN,17.2,600,4.3,Massive Caller,72,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PRI,11.6,600,4.3,Massive Caller,72,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PT,2.8,600,4.3,Massive Caller,72,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PVEM,1.9,600,4.3,Massive Caller,72,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,10.5,600,4.3,Massive Caller,72,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OMAR BORBOA,20.8,600,4.3,Massive Caller,74,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,JERÓNIMO DÍAZ OROZCO,16.7,600,4.3,Massive Caller,74,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,27.4,600,4.3,Massive Caller,74,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,35.1,600,4.3,Massive Caller,74,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ALONDRA GETSEMANY FAUSTO DE LEÓN,26.2,600,4.3,Massive Caller,76,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ANDREA MÁRQUEZ VILLARREAL,23.8,600,4.3,Massive Caller,76,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,23.2,600,4.3,Massive Caller,76,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,26.8,600,4.3,Massive Caller,76,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,PEDRO KUMAMOTO,38.2,600,4.3,Massive Caller,78,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MAURO LOMELÍ,16.9,600,4.3,Massive Caller,78,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,GABRIELA FRANCO,11.8,600,4.3,Massive Caller,78,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,KARIME MORQUECHO,3.7,600,4.3,Massive Caller,78,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MARÍA REYNOSO,2.9,600,4.3,Massive Caller,78,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,10.3,600,4.3,Massive Caller,78,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,16.2,600,4.3,Massive Caller,78,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,GABRIELA CÁRDENAS RODRÍGUEZ,24.6,600,4.3,Massive Caller,80,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MÓNICA MAGAÑA,18.6,600,4.3,Massive Caller,80,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,ÓSCAR JAVIER RAMÍREZ CASTELLANOS,10.2,600,4.3,Massive Caller,80,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MIRZA FLORES GÓMEZ,8.5,600,4.3,Massive Caller,80,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,17.8,600,4.3,Massive Caller,80,LITERAL,
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,20.3,600,4.3,Massive Caller,80,LITERAL,
+2025-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MORENA,39.9,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-09-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MORENA,42.1,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MORENA,40.1,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MORENA,37.7,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MORENA,39.1,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MORENA,40.4,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MORENA,37.1,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MORENA,34.5,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MORENA,33.3,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MORENA,35.3,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MORENA,32.7,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MORENA,35.0,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MORENA,32.7,600,4.3,Massive Caller,3,LITERAL,
+2025-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MC,16.2,600,4.3,Massive Caller,3,PONDERADO,"Marcador en borde del plano; lectura ampliada y=518.8, residual 16.1"
+2025-09-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MC,18.1,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MC,19.1,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MC,21.4,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MC,20.6,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MC,19.7,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MC,21.5,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MC,22.6,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MC,21.2,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MC,20.6,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MC,19.7,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MC,20.8,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,MC,22.1,600,4.3,Massive Caller,3,LITERAL,
+2025-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,13.5,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-09-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,10.6,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,11.9,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,10.8,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,12.4,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,11.7,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,10.7,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,11.9,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,14.4,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,13.5,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,14.7,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,14.3,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,16.4,600,4.3,Massive Caller,3,LITERAL,
+2025-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PAN,14.0,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-09-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PAN,13.9,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PAN,15.2,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PAN,15.7,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PAN,13.2,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PAN,14.7,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PAN,13.7,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PAN,14.8,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PAN,15.7,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PAN,14.8,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PAN,17.8,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PAN,14.3,600,4.3,Massive Caller,3,PONDERADO,"Cruce exacto con AÚN NO DECIDE; lectura ampliada y=533.6, residual 14.3"
+2026-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PAN,12.9,600,4.3,Massive Caller,3,LITERAL,
+2025-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PRI,11.4,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-09-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PRI,11.9,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PRI,9.3,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PRI,9.5,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PRI,8.8,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PRI,9.8,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PRI,12.2,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PRI,11.9,600,4.3,Massive Caller,3,PONDERADO,Marcador oculto tras la serie AÚN NO DECIDE; leído por ampliación
+2026-04-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PRI,10.3,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PRI,12.3,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PRI,10.4,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PRI,11.6,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PRI,10.6,600,4.3,Massive Caller,3,LITERAL,
+2025-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PT,2.6,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-09-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PT,2.3,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PT,3.0,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PT,3.2,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PT,2.8,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PT,1.7,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PT,2.9,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PT,2.3,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PT,3.2,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PT,1.3,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PT,1.6,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PT,2.9,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PT,3.6,600,4.3,Massive Caller,3,LITERAL,
+2025-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PVEM,2.5,600,4.3,Massive Caller,3,PONDERADO,Marcador oculto tras PT; validado por residual 100-97.5
+2025-09-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PVEM,1.0,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PVEM,1.3,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PVEM,1.6,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PVEM,3.4,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PVEM,2.3,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PVEM,1.8,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PVEM,2.0,600,4.3,Massive Caller,3,PONDERADO,Marcador adyacente a PT; validado por residual
+2026-04-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PVEM,1.9,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PVEM,2.3,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PVEM,3.2,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PVEM,1.1,600,4.3,Massive Caller,3,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,INTENCION_PARTIDO,Total de entrevistados,,PVEM,1.7,600,4.3,Massive Caller,3,LITERAL,
+2025-09-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,MIGUEL ÁNGEL MONRAZ IBARRA,32.3,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,MIGUEL ÁNGEL MONRAZ IBARRA,31.5,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,MIGUEL ÁNGEL MONRAZ IBARRA,30.6,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,MIGUEL ÁNGEL MONRAZ IBARRA,27.7,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,MIGUEL ÁNGEL MONRAZ IBARRA,29.4,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,MIGUEL ÁNGEL MONRAZ IBARRA,27.8,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,MIGUEL ÁNGEL MONRAZ IBARRA,23.9,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,MIGUEL ÁNGEL MONRAZ IBARRA,21.4,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,MIGUEL ÁNGEL MONRAZ IBARRA,19.4,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,MIGUEL ÁNGEL MONRAZ IBARRA,21.7,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,MIGUEL ÁNGEL MONRAZ IBARRA,19.1,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,MIGUEL ÁNGEL MONRAZ IBARRA,21.4,600,4.3,Massive Caller,5,LITERAL,
+2025-09-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,,600,4.3,Massive Caller,5,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-10-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,,600,4.3,Massive Caller,5,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-11-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,,600,4.3,Massive Caller,5,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-12-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,,600,4.3,Massive Caller,5,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-01-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,,600,4.3,Massive Caller,5,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,,600,4.3,Massive Caller,5,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,11.3,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,14.7,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,16.7,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,17.5,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,18.6,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,20.2,600,4.3,Massive Caller,5,LITERAL,
+2025-09-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,,600,4.3,Massive Caller,5,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-10-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,,600,4.3,Massive Caller,5,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-11-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,,600,4.3,Massive Caller,5,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-12-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,,600,4.3,Massive Caller,5,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-01-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,,600,4.3,Massive Caller,5,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,,600,4.3,Massive Caller,5,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,9.7,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,12.9,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,15.7,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,13.2,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,14.9,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,16.7,600,4.3,Massive Caller,5,LITERAL,
+2025-09-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,DIANA ARACELI GONZÁLEZ MARTÍNEZ,19.4,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,DIANA ARACELI GONZÁLEZ MARTÍNEZ,,600,4.3,Massive Caller,5,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-11-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,DIANA ARACELI GONZÁLEZ MARTÍNEZ,,600,4.3,Massive Caller,5,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-12-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,DIANA ARACELI GONZÁLEZ MARTÍNEZ,20.0,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,DIANA ARACELI GONZÁLEZ MARTÍNEZ,17.2,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,DIANA ARACELI GONZÁLEZ MARTÍNEZ,16.9,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,DIANA ARACELI GONZÁLEZ MARTÍNEZ,17.6,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,DIANA ARACELI GONZÁLEZ MARTÍNEZ,17.5,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,DIANA ARACELI GONZÁLEZ MARTÍNEZ,18.5,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,DIANA ARACELI GONZÁLEZ MARTÍNEZ,16.8,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,DIANA ARACELI GONZÁLEZ MARTÍNEZ,17.9,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,DIANA ARACELI GONZÁLEZ MARTÍNEZ,16.0,600,4.3,Massive Caller,5,LITERAL,
+2025-09-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,JOSÉ MIGUEL MENDOZA LARA,,600,4.3,Massive Caller,5,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-10-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,JOSÉ MIGUEL MENDOZA LARA,17.1,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,JOSÉ MIGUEL MENDOZA LARA,16.7,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,JOSÉ MIGUEL MENDOZA LARA,,600,4.3,Massive Caller,5,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-01-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,JOSÉ MIGUEL MENDOZA LARA,,600,4.3,Massive Caller,5,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,JOSÉ MIGUEL MENDOZA LARA,,600,4.3,Massive Caller,5,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,JOSÉ MIGUEL MENDOZA LARA,15.9,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,JOSÉ MIGUEL MENDOZA LARA,16.1,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,JOSÉ MIGUEL MENDOZA LARA,14.0,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,JOSÉ MIGUEL MENDOZA LARA,15.8,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,JOSÉ MIGUEL MENDOZA LARA,13.9,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,JOSÉ MIGUEL MENDOZA LARA,14.9,600,4.3,Massive Caller,5,LITERAL,
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,PAOLA ESPINOSA SÁNCHEZ,14.3,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,PAOLA ESPINOSA SÁNCHEZ,12.3,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,PAOLA ESPINOSA SÁNCHEZ,9.3,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,PAOLA ESPINOSA SÁNCHEZ,8.3,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,PAOLA ESPINOSA SÁNCHEZ,10.3,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,PAOLA ESPINOSA SÁNCHEZ,7.1,600,4.3,Massive Caller,5,LITERAL,
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,CÉSAR MADRIGAL DÍAZ,7.9,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,CÉSAR MADRIGAL DÍAZ,5.3,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,CÉSAR MADRIGAL DÍAZ,6.5,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,CÉSAR MADRIGAL DÍAZ,6.7,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,CÉSAR MADRIGAL DÍAZ,5.7,600,4.3,Massive Caller,5,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PAN,CÉSAR MADRIGAL DÍAZ,3.6,600,4.3,Massive Caller,5,LITERAL,
+2025-09-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,LAURA HARO RAMÍREZ,34.8,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,LAURA HARO RAMÍREZ,35.7,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,LAURA HARO RAMÍREZ,36.4,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,LAURA HARO RAMÍREZ,33.3,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,LAURA HARO RAMÍREZ,36.1,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,LAURA HARO RAMÍREZ,33.3,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,LAURA HARO RAMÍREZ,31.1,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,LAURA HARO RAMÍREZ,29.4,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,LAURA HARO RAMÍREZ,27.8,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,LAURA HARO RAMÍREZ,26.1,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,LAURA HARO RAMÍREZ,28.6,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,LAURA HARO RAMÍREZ,31.4,600,4.3,Massive Caller,7,LITERAL,
+2025-10-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,,600,4.3,Massive Caller,7,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-11-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,22.7,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,23.1,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,22.3,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,25.1,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,22.2,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,23.8,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,26.9,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,24.2,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,27.6,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,26.8,600,4.3,Massive Caller,7,LITERAL,
+2025-09-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,21.8,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,21.5,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,18.2,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,20.6,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,19.5,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,19.7,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,21.1,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,22.4,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,20.3,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,19.1,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,20.3,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,17.4,600,4.3,Massive Caller,7,LITERAL,
+2025-09-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,HORTENSIA NOROÑA QUEZADA,17.4,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,HORTENSIA NOROÑA QUEZADA,14.3,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,HORTENSIA NOROÑA QUEZADA,13.6,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,HORTENSIA NOROÑA QUEZADA,12.8,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,HORTENSIA NOROÑA QUEZADA,13.9,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,HORTENSIA NOROÑA QUEZADA,11.5,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,HORTENSIA NOROÑA QUEZADA,12.2,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,HORTENSIA NOROÑA QUEZADA,10.6,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,HORTENSIA NOROÑA QUEZADA,11.1,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,HORTENSIA NOROÑA QUEZADA,13.7,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,HORTENSIA NOROÑA QUEZADA,13.3,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,HORTENSIA NOROÑA QUEZADA,13.7,600,4.3,Massive Caller,7,LITERAL,
+2025-09-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,VERÓNICA FLORES PÉREZ,4.3,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,VERÓNICA FLORES PÉREZ,7.1,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,VERÓNICA FLORES PÉREZ,9.1,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,VERÓNICA FLORES PÉREZ,10.3,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,VERÓNICA FLORES PÉREZ,8.3,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,VERÓNICA FLORES PÉREZ,10.4,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,VERÓNICA FLORES PÉREZ,13.3,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,VERÓNICA FLORES PÉREZ,13.8,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,VERÓNICA FLORES PÉREZ,13.9,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,VERÓNICA FLORES PÉREZ,16.9,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,VERÓNICA FLORES PÉREZ,10.2,600,4.3,Massive Caller,7,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,PRI,VERÓNICA FLORES PÉREZ,10.7,600,4.3,Massive Caller,7,LITERAL,
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CARLOS LOMELÍ BOLAÑOS,33.3,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CARLOS LOMELÍ BOLAÑOS,34.5,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CARLOS LOMELÍ BOLAÑOS,36.2,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CARLOS LOMELÍ BOLAÑOS,35.4,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CARLOS LOMELÍ BOLAÑOS,33.0,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CARLOS LOMELÍ BOLAÑOS,34.3,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CARLOS LOMELÍ BOLAÑOS,35.8,600,4.3,Massive Caller,9,LITERAL,
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CHEMA MARTÍNEZ,17.0,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CHEMA MARTÍNEZ,14.9,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CHEMA MARTÍNEZ,,600,4.3,Massive Caller,9,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CHEMA MARTÍNEZ,,600,4.3,Massive Caller,9,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CHEMA MARTÍNEZ,16.2,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CHEMA MARTÍNEZ,,600,4.3,Massive Caller,9,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CHEMA MARTÍNEZ,16.2,600,4.3,Massive Caller,9,LITERAL,
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,ITZUL BARRERA RODRÍGUEZ,10.1,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,ITZUL BARRERA RODRÍGUEZ,10.7,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,ITZUL BARRERA RODRÍGUEZ,,600,4.3,Massive Caller,9,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,ITZUL BARRERA RODRÍGUEZ,13.4,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,ITZUL BARRERA RODRÍGUEZ,12.4,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,ITZUL BARRERA RODRÍGUEZ,14.7,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,ITZUL BARRERA RODRÍGUEZ,14.2,600,4.3,Massive Caller,9,LITERAL,
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CARLOS PALACIOS RODRÍGUEZ,8.1,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CARLOS PALACIOS RODRÍGUEZ,7.1,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CARLOS PALACIOS RODRÍGUEZ,9.2,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CARLOS PALACIOS RODRÍGUEZ,10.8,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CARLOS PALACIOS RODRÍGUEZ,,600,4.3,Massive Caller,9,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CARLOS PALACIOS RODRÍGUEZ,9.2,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,CARLOS PALACIOS RODRÍGUEZ,10.8,600,4.3,Massive Caller,9,LITERAL,
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MERY GÓMEZ POZOS,,600,4.3,Massive Caller,9,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MERY GÓMEZ POZOS,3.5,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MERY GÓMEZ POZOS,,600,4.3,Massive Caller,9,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MERY GÓMEZ POZOS,5.6,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MERY GÓMEZ POZOS,7.5,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MERY GÓMEZ POZOS,,600,4.3,Massive Caller,9,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MERY GÓMEZ POZOS,7.4,600,4.3,Massive Caller,9,LITERAL,
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,13.7,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,11.9,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,12.8,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,7.5,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,9.2,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,10.1,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,6.8,600,4.3,Massive Caller,9,LITERAL,
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MARIANA FERNÁNDEZ RAMÍREZ,3.0,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MARIANA FERNÁNDEZ RAMÍREZ,2.4,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MARIANA FERNÁNDEZ RAMÍREZ,2.9,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MARIANA FERNÁNDEZ RAMÍREZ,2.2,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MARIANA FERNÁNDEZ RAMÍREZ,3.9,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MARIANA FERNÁNDEZ RAMÍREZ,4.3,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MARIANA FERNÁNDEZ RAMÍREZ,5.4,600,4.3,Massive Caller,9,LITERAL,
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,11.7,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,8.9,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,10.2,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,3.4,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,5.3,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,6.1,600,4.3,Massive Caller,9,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,3.4,600,4.3,Massive Caller,9,LITERAL,
+2025-09-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,VERÓNICA DELGADILLO GARCÍA,39.6,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,VERÓNICA DELGADILLO GARCÍA,39.2,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,VERÓNICA DELGADILLO GARCÍA,40.2,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,VERÓNICA DELGADILLO GARCÍA,39.4,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,VERÓNICA DELGADILLO GARCÍA,42.6,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,VERÓNICA DELGADILLO GARCÍA,39.4,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,VERÓNICA DELGADILLO GARCÍA,42.1,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,VERÓNICA DELGADILLO GARCÍA,44.1,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,VERÓNICA DELGADILLO GARCÍA,42.3,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,VERÓNICA DELGADILLO GARCÍA,39.4,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,VERÓNICA DELGADILLO GARCÍA,41.6,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,VERÓNICA DELGADILLO GARCÍA,39.6,600,4.3,Massive Caller,11,LITERAL,
+2025-09-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,CLEMENTE CASTAÑEDA HOEFLICH,16.7,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,CLEMENTE CASTAÑEDA HOEFLICH,,600,4.3,Massive Caller,11,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-11-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,CLEMENTE CASTAÑEDA HOEFLICH,14.9,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,CLEMENTE CASTAÑEDA HOEFLICH,14.1,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,CLEMENTE CASTAÑEDA HOEFLICH,14.9,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,CLEMENTE CASTAÑEDA HOEFLICH,17.4,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,CLEMENTE CASTAÑEDA HOEFLICH,18.7,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,CLEMENTE CASTAÑEDA HOEFLICH,16.3,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,CLEMENTE CASTAÑEDA HOEFLICH,19.2,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,CLEMENTE CASTAÑEDA HOEFLICH,21.1,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,CLEMENTE CASTAÑEDA HOEFLICH,18.4,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,CLEMENTE CASTAÑEDA HOEFLICH,21.7,600,4.3,Massive Caller,11,LITERAL,
+2025-09-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,12.5,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,15.7,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,17.9,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,19.2,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,16.8,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,20.2,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,17.7,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,18.4,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,17.3,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,18.4,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,19.5,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,18.8,600,4.3,Massive Caller,11,LITERAL,
+2025-09-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,22.9,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,21.6,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,20.9,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,23.2,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,20.8,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,19.3,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,16.8,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,17.4,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,15.4,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,13.3,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,15.5,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,17.1,600,4.3,Massive Caller,11,LITERAL,
+2025-09-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,MANUEL ROMO PARRA,8.3,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,MANUEL ROMO PARRA,7.8,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,MANUEL ROMO PARRA,6.0,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,MANUEL ROMO PARRA,4.1,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,MANUEL ROMO PARRA,4.9,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,MANUEL ROMO PARRA,3.7,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,MANUEL ROMO PARRA,4.7,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,MANUEL ROMO PARRA,3.8,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,MANUEL ROMO PARRA,5.8,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,MANUEL ROMO PARRA,7.8,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,MANUEL ROMO PARRA,4.8,600,4.3,Massive Caller,11,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,PRECANDIDATO,Condicional: declarantes del partido,MC,MANUEL ROMO PARRA,2.8,600,4.3,Massive Caller,11,LITERAL,
+2025-09-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,NO,51.2,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,NO,52.3,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,NO,50.5,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,NO,53.4,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,NO,51.6,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,NO,49.8,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,NO,52.9,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,NO,54.7,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,NO,56.4,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,NO,59.8,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,NO,58.8,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,NO,59.8,600,4.3,Massive Caller,13,LITERAL,
+2025-09-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,SÍ,48.8,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,SÍ,47.7,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,SÍ,49.5,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,SÍ,46.6,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,SÍ,48.4,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,SÍ,50.3,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,SÍ,47.1,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,SÍ,45.3,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,SÍ,43.6,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,SÍ,40.2,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,SÍ,41.2,600,4.3,Massive Caller,13,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14039,Guadalajara,REELECCION,Total de entrevistados,MC,SÍ,40.2,600,4.3,Massive Caller,13,LITERAL,
+2025-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MORENA,37.2,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-09-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MORENA,34.3,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MORENA,34.0,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MORENA,32.0,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MORENA,33.9,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MORENA,35.4,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MORENA,31.4,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MORENA,30.7,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MORENA,29.5,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MORENA,31.7,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MORENA,30.4,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MORENA,27.3,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MORENA,29.7,600,4.3,Massive Caller,73,LITERAL,
+2025-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MC,23.3,600,4.3,Massive Caller,73,PONDERADO,"Marcador en borde del plano; lectura ampliada y=445.5, residual 23.3"
+2025-09-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MC,25.0,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MC,26.1,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MC,27.7,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MC,24.7,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MC,23.0,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MC,26.1,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MC,24.2,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MC,25.2,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MC,22.1,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MC,25.8,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MC,25.0,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,MC,26.3,600,4.3,Massive Caller,73,LITERAL,
+2025-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PAN,14.3,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-09-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PAN,15.7,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PAN,16.1,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PAN,13.2,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PAN,15.9,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PAN,15.1,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PAN,14.5,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PAN,17.8,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PAN,16.7,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PAN,17.2,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PAN,18.2,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PAN,19.8,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PAN,17.2,600,4.3,Massive Caller,73,LITERAL,
+2025-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PRI,10.2,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-09-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PRI,10.3,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PRI,7.7,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PRI,9.7,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PRI,11.6,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PRI,10.4,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PRI,12.2,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PRI,13.2,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PRI,12.3,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PRI,9.9,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PRI,12.7,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PRI,10.4,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PRI,11.6,600,4.3,Massive Caller,73,LITERAL,
+2025-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,11.3,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-09-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,8.9,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,8.6,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,11.0,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,10.0,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,11.0,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,10.5,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,9.5,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,11.6,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,13.0,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,9.2,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,11.7,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,AÚN NO DECIDE,10.5,600,4.3,Massive Caller,73,LITERAL,
+2025-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PT,2.3,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-09-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PT,4.9,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PT,5.9,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PT,4.2,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PT,3.3,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PT,3.9,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PT,4.8,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PT,3.7,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PT,3.4,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PT,3.6,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PT,2.4,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PT,4.5,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PT,2.8,600,4.3,Massive Caller,73,LITERAL,
+2025-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PVEM,1.4,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-09-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PVEM,0.9,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PVEM,1.7,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PVEM,2.3,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PVEM,0.5,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PVEM,1.2,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PVEM,0.6,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PVEM,1.0,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PVEM,1.4,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PVEM,2.6,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PVEM,1.4,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PVEM,1.6,600,4.3,Massive Caller,73,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,INTENCION_PARTIDO,Total de entrevistados,,PVEM,1.9,600,4.3,Massive Caller,73,LITERAL,
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,36.7,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,35.7,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,37.1,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,38.0,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,37.3,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,39.4,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,41.9,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,37.6,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,38.9,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,40.7,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,39.5,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,AÚN NO DECIDE,35.1,600,4.3,Massive Caller,75,LITERAL,
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,24.5,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,26.2,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,28.6,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,29.6,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,28.4,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,26.3,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,27.9,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,29.3,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,27.8,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,25.6,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,26.5,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OTRO,27.4,600,4.3,Massive Caller,75,LITERAL,
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OMAR BORBOA,30.6,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OMAR BORBOA,28.6,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OMAR BORBOA,25.7,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OMAR BORBOA,22.5,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OMAR BORBOA,25.4,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OMAR BORBOA,22.2,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OMAR BORBOA,20.9,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OMAR BORBOA,22.6,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OMAR BORBOA,19.4,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OMAR BORBOA,22.1,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OMAR BORBOA,19.7,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,OMAR BORBOA,20.8,600,4.3,Massive Caller,75,LITERAL,
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,JERÓNIMO DÍAZ OROZCO,8.2,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,JERÓNIMO DÍAZ OROZCO,9.5,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,JERÓNIMO DÍAZ OROZCO,8.6,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,JERÓNIMO DÍAZ OROZCO,9.9,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,JERÓNIMO DÍAZ OROZCO,8.9,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,JERÓNIMO DÍAZ OROZCO,12.1,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,JERÓNIMO DÍAZ OROZCO,9.3,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,JERÓNIMO DÍAZ OROZCO,10.5,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,JERÓNIMO DÍAZ OROZCO,13.8,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,JERÓNIMO DÍAZ OROZCO,11.6,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,JERÓNIMO DÍAZ OROZCO,14.3,600,4.3,Massive Caller,75,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PAN,JERÓNIMO DÍAZ OROZCO,16.7,600,4.3,Massive Caller,75,LITERAL,
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,38.0,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,35.2,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,33.2,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,34.5,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,32.1,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,28.1,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,30.2,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,32.2,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,29.1,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,27.5,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,28.1,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,AÚN NO DECIDE,26.8,600,4.3,Massive Caller,77,LITERAL,
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ALONDRA GETSEMANY FAUSTO DE LEÓN,28.6,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ALONDRA GETSEMANY FAUSTO DE LEÓN,29.3,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ALONDRA GETSEMANY FAUSTO DE LEÓN,28.6,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ALONDRA GETSEMANY FAUSTO DE LEÓN,26.9,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ALONDRA GETSEMANY FAUSTO DE LEÓN,28.5,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ALONDRA GETSEMANY FAUSTO DE LEÓN,31.5,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ALONDRA GETSEMANY FAUSTO DE LEÓN,29.1,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ALONDRA GETSEMANY FAUSTO DE LEÓN,27.8,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ALONDRA GETSEMANY FAUSTO DE LEÓN,30.3,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ALONDRA GETSEMANY FAUSTO DE LEÓN,28.3,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ALONDRA GETSEMANY FAUSTO DE LEÓN,27.1,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ALONDRA GETSEMANY FAUSTO DE LEÓN,26.1,600,4.3,Massive Caller,77,LITERAL,
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ANDREA MÁRQUEZ VILLARREAL,23.8,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ANDREA MÁRQUEZ VILLARREAL,23.5,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ANDREA MÁRQUEZ VILLARREAL,23.8,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ANDREA MÁRQUEZ VILLARREAL,23.1,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ANDREA MÁRQUEZ VILLARREAL,25.0,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ANDREA MÁRQUEZ VILLARREAL,22.8,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ANDREA MÁRQUEZ VILLARREAL,20.9,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ANDREA MÁRQUEZ VILLARREAL,18.9,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ANDREA MÁRQUEZ VILLARREAL,16.8,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ANDREA MÁRQUEZ VILLARREAL,19.6,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ANDREA MÁRQUEZ VILLARREAL,22.9,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,ANDREA MÁRQUEZ VILLARREAL,23.8,600,4.3,Massive Caller,77,LITERAL,
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,9.7,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,12.0,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,14.4,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,15.5,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,14.4,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,17.6,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,19.9,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,21.2,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,23.9,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,24.6,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,22.0,600,4.3,Massive Caller,77,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,PRI,OTRO,23.2,600,4.3,Massive Caller,77,LITERAL,
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,PEDRO KUMAMOTO,55.1,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,PEDRO KUMAMOTO,52.6,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,PEDRO KUMAMOTO,51.3,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,PEDRO KUMAMOTO,48.2,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,PEDRO KUMAMOTO,49.2,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,PEDRO KUMAMOTO,46.3,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,PEDRO KUMAMOTO,43.9,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,PEDRO KUMAMOTO,42.7,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,PEDRO KUMAMOTO,39.2,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,PEDRO KUMAMOTO,42.3,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,PEDRO KUMAMOTO,40.6,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,PEDRO KUMAMOTO,38.1,600,4.3,Massive Caller,79,LITERAL,
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MAURO LOMELÍ,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MAURO LOMELÍ,10.4,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MAURO LOMELÍ,12.2,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MAURO LOMELÍ,13.8,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MAURO LOMELÍ,12.6,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MAURO LOMELÍ,11.4,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MAURO LOMELÍ,10.3,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MAURO LOMELÍ,11.5,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MAURO LOMELÍ,14.9,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MAURO LOMELÍ,16.3,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MAURO LOMELÍ,15.4,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MAURO LOMELÍ,17.1,600,4.3,Massive Caller,79,LITERAL,
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,18.9,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,17.3,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,15.3,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,18.7,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,17.6,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,18.4,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,14.5,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,15.2,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,14.0,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,12.4,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,14.3,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,AÚN NO DECIDE,16.2,600,4.3,Massive Caller,79,LITERAL,
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,GABRIELA FRANCO,8.2,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,GABRIELA FRANCO,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,GABRIELA FRANCO,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,GABRIELA FRANCO,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,GABRIELA FRANCO,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,GABRIELA FRANCO,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,GABRIELA FRANCO,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,GABRIELA FRANCO,7.8,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,GABRIELA FRANCO,9.4,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,GABRIELA FRANCO,7.6,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,GABRIELA FRANCO,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,GABRIELA FRANCO,11.9,600,4.3,Massive Caller,79,LITERAL,
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,17.7,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,9.5,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,10.7,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,12.9,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,11.4,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,10.4,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,OTRO,10.4,600,4.3,Massive Caller,79,LITERAL,
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,KARIME MORQUECHO,6.2,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,KARIME MORQUECHO,6.5,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,KARIME MORQUECHO,5.4,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,KARIME MORQUECHO,3.9,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,KARIME MORQUECHO,4.7,600,4.3,Massive Caller,79,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,KARIME MORQUECHO,3.4,600,4.3,Massive Caller,79,LITERAL,
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MARÍA REYNOSO,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MARÍA REYNOSO,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MARÍA REYNOSO,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MARÍA REYNOSO,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MARÍA REYNOSO,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MORENA,MARÍA REYNOSO,,600,4.3,Massive Caller,79,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,GABRIELA CÁRDENAS RODRÍGUEZ,25.3,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,GABRIELA CÁRDENAS RODRÍGUEZ,22.1,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,GABRIELA CÁRDENAS RODRÍGUEZ,18.7,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,GABRIELA CÁRDENAS RODRÍGUEZ,,600,4.3,Massive Caller,81,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,GABRIELA CÁRDENAS RODRÍGUEZ,,600,4.3,Massive Caller,81,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,GABRIELA CÁRDENAS RODRÍGUEZ,20.5,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,GABRIELA CÁRDENAS RODRÍGUEZ,,600,4.3,Massive Caller,81,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,GABRIELA CÁRDENAS RODRÍGUEZ,20.5,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,GABRIELA CÁRDENAS RODRÍGUEZ,22.6,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,GABRIELA CÁRDENAS RODRÍGUEZ,24.1,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,GABRIELA CÁRDENAS RODRÍGUEZ,26.0,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,GABRIELA CÁRDENAS RODRÍGUEZ,24.6,600,4.3,Massive Caller,81,LITERAL,
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,,600,4.3,Massive Caller,81,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,,600,4.3,Massive Caller,81,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,,600,4.3,Massive Caller,81,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,,600,4.3,Massive Caller,81,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,,600,4.3,Massive Caller,81,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,,600,4.3,Massive Caller,81,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,25.3,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,24.1,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,27.3,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,23.4,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,22.3,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,AÚN NO DECIDE,20.3,600,4.3,Massive Caller,81,LITERAL,
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MÓNICA MAGAÑA,,600,4.3,Massive Caller,81,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MÓNICA MAGAÑA,,600,4.3,Massive Caller,81,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MÓNICA MAGAÑA,,600,4.3,Massive Caller,81,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MÓNICA MAGAÑA,16.5,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MÓNICA MAGAÑA,17.9,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MÓNICA MAGAÑA,15.6,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MÓNICA MAGAÑA,17.1,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MÓNICA MAGAÑA,15.2,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MÓNICA MAGAÑA,17.3,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MÓNICA MAGAÑA,18.2,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MÓNICA MAGAÑA,17.2,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MÓNICA MAGAÑA,18.6,600,4.3,Massive Caller,81,LITERAL,
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,32.2,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,27.9,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,25.7,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,24.8,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,23.6,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,22.1,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,18.3,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,18.2,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,16.7,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,14.6,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,15.7,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,OTRO,17.8,600,4.3,Massive Caller,81,LITERAL,
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,ÓSCAR JAVIER RAMÍREZ CASTELLANOS,,600,4.3,Massive Caller,81,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,ÓSCAR JAVIER RAMÍREZ CASTELLANOS,10.3,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,ÓSCAR JAVIER RAMÍREZ CASTELLANOS,11.4,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,ÓSCAR JAVIER RAMÍREZ CASTELLANOS,,600,4.3,Massive Caller,81,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,ÓSCAR JAVIER RAMÍREZ CASTELLANOS,12.2,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,ÓSCAR JAVIER RAMÍREZ CASTELLANOS,,600,4.3,Massive Caller,81,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,ÓSCAR JAVIER RAMÍREZ CASTELLANOS,12.7,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,ÓSCAR JAVIER RAMÍREZ CASTELLANOS,11.0,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,ÓSCAR JAVIER RAMÍREZ CASTELLANOS,8.7,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,ÓSCAR JAVIER RAMÍREZ CASTELLANOS,9.8,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,ÓSCAR JAVIER RAMÍREZ CASTELLANOS,11.2,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,ÓSCAR JAVIER RAMÍREZ CASTELLANOS,10.2,600,4.3,Massive Caller,81,LITERAL,
+2025-09-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MIRZA FLORES GÓMEZ,3.4,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-10-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MIRZA FLORES GÓMEZ,4.4,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-11-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MIRZA FLORES GÓMEZ,7.1,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2025-12-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MIRZA FLORES GÓMEZ,10.3,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-01-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MIRZA FLORES GÓMEZ,8.9,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-02-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MIRZA FLORES GÓMEZ,6.6,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-03-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MIRZA FLORES GÓMEZ,9.5,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-04-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MIRZA FLORES GÓMEZ,,600,4.3,Massive Caller,81,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-05-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MIRZA FLORES GÓMEZ,7.3,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-06-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MIRZA FLORES GÓMEZ,,600,4.3,Massive Caller,81,AUSENTE,Marcador ocluido; no resuelto automáticamente
+2026-07-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MIRZA FLORES GÓMEZ,7.5,600,4.3,Massive Caller,81,PONDERADO,Serie histórica sin etiqueta numérica en la fuente
+2026-08-12,Jalisco,14120,Zapopan,PRECANDIDATO,Condicional: declarantes del partido,MC,MIRZA FLORES GÓMEZ,8.5,600,4.3,Massive Caller,81,LITERAL,

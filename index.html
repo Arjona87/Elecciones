@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preferencia electoral municipal · Jalisco 2027 · Piloto</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Arial&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+:root{
+  --morena:#B71C1C; --pan:#0033A0; --pri:#E31B23; --pvem:#50B848;
+  --mc:#FF8200; --pt:#E30613; --otros:#707070; --nodec:#1A1A1A;
+  --ink:#15202B; --muted:#5B6B7B; --line:#E3E8EE; --bg:#F6F8FA; --card:#FFF;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 Arial,Helvetica,sans-serif}
+h1,h2,h3,.num{font-family:Poppins,Arial,sans-serif}
+header{background:var(--card);border-bottom:1px solid var(--line);padding:14px 22px;
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;position:sticky;top:0;z-index:20}
+#custom-logo{min-width:132px;height:40px;border:1px dashed #C6CFD8;border-radius:6px;
+  display:flex;align-items:center;justify-content:center;color:#9AA7B4;font-size:10px;letter-spacing:.5px}
+.htitle{font-size:15px;font-weight:800;letter-spacing:-.2px}
+.hsub{font-size:11.5px;color:var(--muted)}
+.controls{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+select,button{font:13px Arial;padding:7px 11px;border:1px solid var(--line);
+  border-radius:6px;background:#fff;color:var(--ink);cursor:pointer}
+button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+main{padding:20px 22px 60px;max-width:1500px;margin:0 auto}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(178px,1fr));gap:12px;margin-bottom:20px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:13px 15px}
+.kpi .lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted)}
+.kpi .val{font-family:Poppins;font-size:25px;font-weight:800;margin-top:5px;line-height:1.1}
+.kpi .sub{font-size:11.5px;color:var(--muted);margin-top:3px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(430px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:16px 18px}
+.card.wide{grid-column:1/-1}
+.card h3{margin:0 0 3px;font-size:14.5px;font-weight:800;letter-spacing:-.1px}
+.card p.why{margin:0 0 12px;font-size:12px;color:var(--muted)}
+.wrap{position:relative;height:290px}
+.wrap.tall{height:380px}
+.tag{display:inline-block;font-size:10px;padding:2px 7px;border-radius:20px;
+  background:#EEF2F6;color:var(--muted);margin-left:6px;vertical-align:middle}
+.tag.warn{background:#FCE4D6;color:#8A4B12}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th,td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right}
+th:first-child,td:first-child{text-align:left}
+th{font-size:10.5px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);font-weight:600}
+td.n{font-family:Poppins;font-weight:600}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
+.est{font-size:10px;color:#B06A2C}
+footer{border-top:1px solid var(--line);margin-top:26px;padding:16px 22px;
+  font-size:11.5px;color:var(--muted);background:var(--card)}
+footer b{color:var(--ink)}
+.note{background:#FFF8E8;border:1px solid #F0DCA8;border-radius:7px;padding:11px 14px;
+  font-size:12.5px;margin-bottom:16px}
+</style>
+</head>
+<body>
+<header>
+  <div id="custom-logo">[LOGO_CLIENTE_PLACEHOLDER]</div>
+  <div>
+    <div class="htitle">Preferencia electoral municipal — Jalisco, alcaldías 2027</div>
+    <div class="hsub" id="stamp"></div>
+  </div>
+  <div class="controls">
+    <select id="muni"></select>
+    <select id="ola"></select>
+    <button id="btnBase" class="on">Base: total</button>
+  </div>
+</header>
+
+<main>
+  <div class="note" id="alerta"></div>
+  <div class="kpis" id="kpis"></div>
+
+  <div class="grid">
+    <div class="card wide">
+      <h3>La ventaja del puntero se mide contra el error de la diferencia, no contra el error de la encuesta</h3>
+      <p class="why">Ranking de la ola seleccionada con intervalo de confianza al 95 %. Si las barras de dos partidos se traslapan, la diferencia no es estadísticamente significativa.</p>
+      <div class="wrap tall"><canvas id="cRank"></canvas></div>
+    </div>
+
+    <div class="card wide">
+      <h3>Trece meses de tracking: la evolución es el dato, no la foto</h3>
+      <p class="why">Serie mensual completa por partido. Los puntos de agosto de 2026 provienen de etiquetas impresas; los anteriores fueron reconstruidos de la gráfica de la fuente.</p>
+      <div class="wrap tall"><canvas id="cTrack"></canvas></div>
+    </div>
+
+    <div class="card">
+      <h3>Quién ganó y quién perdió terreno en doce meses</h3>
+      <p class="why">Variación entre la primera y la última ola. Identifica el movimiento estructural por encima del ruido mensual.</p>
+      <div class="wrap"><canvas id="cDelta"></canvas></div>
+    </div>
+
+    <div class="card">
+      <h3>El indeciso es la bolsa disponible y está creciendo</h3>
+      <p class="why">Evolución del voto no declarado. Un indeciso al alza indica que el electorado se está soltando de sus anclas partidistas.</p>
+      <div class="wrap"><canvas id="cNoDec"></canvas></div>
+    </div>
+
+    <div class="card">
+      <h3>Guadalajara frente a Zapopan: dos plazas con dinámicas distintas</h3>
+      <p class="why">Comparativo del puntero y su perseguidor en ambos municipios. La brecha revela dónde la elección está realmente en disputa.</p>
+      <div class="wrap"><canvas id="cComp"></canvas></div>
+    </div>
+
+    <div class="card">
+      <h3>Composición del voto en la última ola</h3>
+      <p class="why">Estructura porcentual con el no declarado destacado. Muestra cuánto del pastel sigue sin asignar.</p>
+      <div class="wrap"><canvas id="cDona"></canvas></div>
+    </div>
+
+    <div class="card wide">
+      <h3>Interna de cada partido: ¿candidato natural o competencia abierta?</h3>
+      <p class="why">Preferencia de precandidato (universo condicional) y voto efectivo estimado sobre el total. La segunda columna es la que compara peras con peras.</p>
+      <div id="tabla"></div>
+    </div>
+
+    <div class="card wide">
+      <h3>Trazabilidad de cada celda</h3>
+      <p class="why">Toda cifra del tablero se clasifica por origen. Ninguna se rellenó por analogía ni se ajustó para forzar el cierre al 100 %.</p>
+      <div id="traza"></div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <b>Fuente:</b> Massive Caller. <i>Jalisco: intención al voto, alcaldías 2027</i>, corte 12 de agosto de 2026. N = 600 por municipio, margen de error declarado ±4.3 %.<br>
+  <b>Nota de método:</b> el margen de error recalculado con z = 1.96 y p = 0.5 para N = 600 arroja ±4.0 %; la discrepancia se reporta y no se corrige la cifra de la fuente. La casa encuestadora no publica factores de ponderación ni post-estratificación, por lo que no se supone ninguno.<br>
+  <b>*</b> Las cifras marcadas con asterisco fueron reconstruidas de las gráficas de tracking, que no incluyen tabla de valores. Error máximo de calibración: 0.257 puntos porcentuales.<br>
+  <b>Derechos:</b> D.R. © Massive Caller S.A. de C.V., 2026. Reproducción sujeta a referencia al autor. No difundir durante veda electoral. — Elaboración: CGES/DGAPP/AA.
+</footer>
+
+<script src="data.js"></script>
+<script>
+const D=window.DATA, M=D.meta, OLAS=M.olas;
+const COL={MORENA:'#B71C1C',PAN:'#0033A0',PRI:'#E31B23',PVEM:'#50B848',MC:'#FF8200',
+           PT:'#E30613','AÚN NO DECIDE':'#1A1A1A',OTRO:'#707070'};
+const ORD=['MORENA','MC','PAN','PRI','PT','PVEM','AÚN NO DECIDE'];
+const PARTIDOS=['MORENA','MC','PAN','PRI','PT','PVEM'];
+let muni='Guadalajara', ola=OLAS[OLAS.length-1], base='total';
+const charts={};
+const fmtOla=o=>{const[y,m]=o.split('-');return ['','ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'][+m]+' '+y.slice(2);};
+const est=(tp,pc,a,o)=>D.estatus[`${muni}|${tp}|${pc}|${a}|${o}`]||'';
+const mk=(tp,pc,a,o,v)=>v==null?'—':v.toFixed(1)+(est(tp,pc,a,o)==='PONDERADO'?'*':'');
+
+// margen de error de la diferencia entre dos proporciones
+const meDif=(p1,p2,n=600,z=1.96)=>{const a=p1/100,b=p2/100;
+  return 100*z*Math.sqrt(Math.max(0,(a+b-(a-b)*(a-b))/n));};
+const meProp=(p,n=600,z=1.96)=>100*z*Math.sqrt((p/100)*(1-p/100)/n);
+
+function serie(p){return OLAS.map(o=>{const v=D.partido[muni][p]?.[o]; return v==null?null:v;});}
+function olaVals(){
+  let r=ORD.map(p=>({p,v:D.partido[muni][p]?.[ola]??null})).filter(x=>x.v!=null);
+  if(base==='efectivo'){
+    const nd=r.find(x=>x.p==='AÚN NO DECIDE')?.v||0;
+    r=r.filter(x=>x.p!=='AÚN NO DECIDE').map(x=>({p:x.p,v:x.v*100/(100-nd)}));
+  }
+  return r.sort((a,b)=>b.v-a.v);
+}
+const kill=k=>{if(charts[k])charts[k].destroy();};
+const baseOpts=(extra={})=>Object.assign({responsive:true,maintainAspectRatio:false,
+  interaction:{mode:'index',intersect:false},
+  plugins:{legend:{labels:{font:{family:'Arial',size:11},usePointStyle:true,boxWidth:7}}},
+  scales:{y:{grid:{color:'#EEF2F6'},ticks:{font:{family:'Arial',size:11},callback:v=>v+'%'}},
+          x:{grid:{display:false},ticks:{font:{family:'Arial',size:10.5}}}}},extra);
+
+function kpis(){
+  const r=olaVals(), p1=r[0], p2=r[1];
+  const dif=p1.v-p2.v, me=meDif(p1.v,p2.v), emp=dif<=me;
+  const nd=D.partido[muni]['AÚN NO DECIDE'][ola]??0;
+  const first=D.partido[muni][p1.p][OLAS[0]], delta=first==null?null:p1.v-first;
+  document.getElementById('kpis').innerHTML=[
+    ['Puntero',`<span class="dot" style="background:${COL[p1.p]}"></span>${p1.p}`,p1.v.toFixed(1)+'% de intención'],
+    ['Ventaja sobre el 2.º',dif.toFixed(1)+' pp',`error de la diferencia ±${me.toFixed(1)} pp`],
+    ['Lectura estadística',emp?'Empate técnico':'Ventaja significativa',
+       emp?`${p1.p} y ${p2.p} son indistinguibles al 95 %`:`${p1.p} supera a ${p2.p} al 95 % de confianza`],
+    ['Voto no declarado',nd.toFixed(1)+'%',(nd>15?'bolsa amplia sin asignar':'bolsa contenida')],
+    ['Movimiento del puntero',delta==null?'—':(delta>0?'+':'')+delta.toFixed(1)+' pp',
+       'entre ago-25 y '+fmtOla(ola)]
+  ].map(([l,v,s])=>`<div class="kpi"><div class="lab">${l}</div><div class="val">${v}</div><div class="sub">${s}</div></div>`).join('');
+  document.getElementById('alerta').innerHTML= emp
+    ? `<b>Atención:</b> en ${muni}, la diferencia de ${dif.toFixed(1)} pp entre ${p1.p} y ${p2.p} <b>no supera</b> el margen de error de la diferencia (±${me.toFixed(1)} pp). Tratar la plaza como competida, no como ganada.`
+    : `En ${muni}, ${p1.p} aventaja a ${p2.p} por ${dif.toFixed(1)} pp, por encima del error de la diferencia (±${me.toFixed(1)} pp). La ventaja es estadísticamente significativa al 95 %.`;
+}
+
+function rank(){
+  const r=olaVals();
+  kill('r');charts.r=new Chart(document.getElementById('cRank'),{type:'bar',
+    data:{labels:r.map(x=>x.p),datasets:[
+      {label:'Intención de voto',data:r.map(x=>x.v),backgroundColor:r.map(x=>COL[x.p]),
+       borderRadius:3,barPercentage:.65},
+      {label:'IC 95 %',type:'scatter',data:r.map((x,i)=>({x:i,y:x.v})),
+       backgroundColor:'transparent',pointRadius:0,
+       errorLo:r.map(x=>meProp(x.v))}]},
+    options:baseOpts({indexAxis:'y',
+      scales:{x:{grid:{color:'#EEF2F6'},ticks:{callback:v=>v+'%',font:{size:11}}},
+              y:{grid:{display:false},ticks:{font:{family:'Poppins',size:12,weight:'600'}}}},
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>{
+        const v=c.raw; return ` ${v.toFixed(1)}%  (IC 95 %: ${(v-meProp(v)).toFixed(1)} – ${(v+meProp(v)).toFixed(1)})`;}}}}})});
+}
+
+function track(){
+  kill('t');charts.t=new Chart(document.getElementById('cTrack'),{type:'line',
+    data:{labels:OLAS.map(fmtOla),datasets:ORD.map(p=>({label:p,data:serie(p),
+      borderColor:COL[p],backgroundColor:COL[p],borderWidth:p==='AÚN NO DECIDE'?2:2.4,
+      borderDash:p==='AÚN NO DECIDE'?[5,3]:[],pointRadius:2.4,pointHoverRadius:5,
+      tension:.25,spanGaps:true}))},
+    options:baseOpts({plugins:{legend:{position:'bottom',labels:{usePointStyle:true,boxWidth:7,font:{size:11}}},
+      tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ${c.parsed.y==null?'—':c.parsed.y.toFixed(1)+'%'}${est('INTENCION_PARTIDO','None',c.dataset.label,OLAS[c.dataIndex])==='PONDERADO'?' *':''}`}}}})});
+}
+
+function delta(){
+  const d=PARTIDOS.concat(['AÚN NO DECIDE']).map(p=>{
+    const a=D.partido[muni][p]?.[OLAS[0]], b=D.partido[muni][p]?.[OLAS[OLAS.length-1]];
+    return {p,v:(a==null||b==null)?null:b-a};}).filter(x=>x.v!=null).sort((a,b)=>b.v-a.v);
+  kill('d');charts.d=new Chart(document.getElementById('cDelta'),{type:'bar',
+    data:{labels:d.map(x=>x.p),datasets:[{data:d.map(x=>x.v),
+      backgroundColor:d.map(x=>COL[x.p]),borderRadius:3,barPercentage:.6}]},
+    options:baseOpts({plugins:{legend:{display:false},
+      tooltip:{callbacks:{label:c=>` ${c.parsed.y>0?'+':''}${c.parsed.y.toFixed(1)} pp en 12 meses`}}},
+      scales:{y:{grid:{color:'#EEF2F6'},ticks:{callback:v=>(v>0?'+':'')+v+' pp'}},x:{grid:{display:false}}}})});
+}
+
+function nodec(){
+  kill('n');charts.n=new Chart(document.getElementById('cNoDec'),{type:'line',
+    data:{labels:OLAS.map(fmtOla),datasets:M.municipios.map((m,i)=>({label:m,
+      data:OLAS.map(o=>D.partido[m]['AÚN NO DECIDE']?.[o]??null),
+      borderColor:i?'#707070':'#1A1A1A',backgroundColor:i?'#70707022':'#1A1A1A18',
+      fill:true,borderWidth:2.2,pointRadius:2.4,tension:.25,spanGaps:true}))},
+    options:baseOpts({plugins:{legend:{position:'bottom',labels:{usePointStyle:true,boxWidth:7}}}})});
+}
+
+function comp(){
+  const ds=[];
+  M.municipios.forEach(m=>{
+    const top=ORD.filter(p=>p!=='AÚN NO DECIDE')
+      .map(p=>({p,v:D.partido[m][p]?.[ola]??0})).sort((a,b)=>b.v-a.v).slice(0,2);
+    top.forEach((t,i)=>ds.push({muni:m,p:t.p,v:t.v,i}));
+  });
+  kill('c');charts.c=new Chart(document.getElementById('cComp'),{type:'bar',
+    data:{labels:M.municipios,datasets:[0,1].map(i=>({
+      label:i?'2.º lugar':'Puntero',
+      data:M.municipios.map(m=>ds.find(x=>x.muni===m&&x.i===i)?.v??0),
+      backgroundColor:M.municipios.map(m=>{const e=ds.find(x=>x.muni===m&&x.i===i);
+        return e?COL[e.p]+(i?'99':''):'#ccc';}),
+      borderRadius:3,barPercentage:.7}))},
+    options:baseOpts({plugins:{legend:{position:'bottom',labels:{usePointStyle:true,boxWidth:7}},
+      tooltip:{callbacks:{label:c=>{const e=ds.find(x=>x.muni===c.label&&x.i===c.datasetIndex);
+        return ` ${e.p}: ${e.v.toFixed(1)}%`;}}}}})});
+}
+
+function dona(){
+  const r=ORD.map(p=>({p,v:D.partido[muni][p]?.[ola]??0})).filter(x=>x.v>0);
+  kill('o');charts.o=new Chart(document.getElementById('cDona'),{type:'doughnut',
+    data:{labels:r.map(x=>x.p),datasets:[{data:r.map(x=>x.v),
+      backgroundColor:r.map(x=>COL[x.p]),borderColor:'#fff',borderWidth:2}]},
+    options:{responsive:true,maintainAspectRatio:false,cutout:'56%',
+      plugins:{legend:{position:'right',labels:{usePointStyle:true,boxWidth:7,font:{size:11}}},
+        tooltip:{callbacks:{label:c=>` ${c.label}: ${c.parsed.toFixed(1)}%`}}}}});
+}
+
+function tabla(){
+  const pc=D.precand[muni]||{}; let h='';
+  Object.keys(pc).forEach(part=>{
+    const u1=D.partido[muni][part]?.[ola];
+    const rows=Object.keys(pc[part]).filter(a=>a!=='OTRO'&&a!=='AÚN NO DECIDE')
+      .map(a=>({a,v:pc[part][a][ola]})).filter(x=>x.v!=null).sort((x,y)=>y.v-x.v);
+    if(!rows.length)return;
+    const top=rows[0].v, seg=rows[1]?rows[1].v:0;
+    const abierta=(top-seg)<=meDif(top,seg);
+    h+=`<table style="margin-bottom:18px"><tr><th style="width:46%">
+      <span class="dot" style="background:${COL[part]}"></span>${part}
+      <span class="tag ${abierta?'warn':''}">${abierta?'interna abierta':'candidato natural'}</span></th>
+      <th>Preferencia interna (U2)</th><th>Voto del partido (U1)</th><th>Voto efectivo estimado *</th></tr>`;
+    rows.forEach(r=>{
+      const ef=u1==null?null:r.v*u1/100;
+      h+=`<tr><td>${r.a}</td><td class="n">${r.v.toFixed(1)}%</td>
+        <td>${u1==null?'—':u1.toFixed(1)+'%'}</td>
+        <td class="n">${ef==null?'—':ef.toFixed(1)+'%'} <span class="est">*</span></td></tr>`;});
+    h+='</table>';
+  });
+  h+=`<p style="font-size:11.5px;color:var(--muted);margin:0">
+    <b>U1</b> se calcula sobre el total de entrevistados; <b>U2</b> solo sobre quienes ya declararon
+    ese partido. No son comparables entre sí ni sumables. El <b>voto efectivo estimado</b> (U2 × U1 ÷ 100)
+    es una métrica derivada por esta elaboración, no publicada por la fuente.</p>`;
+  document.getElementById('tabla').innerHTML=h;
+}
+
+function traza(){
+  const lit=D.meta.conteo.LITERAL, pon=D.meta.conteo.PONDERADO, aus=D.meta.conteo.AUSENTE;
+  const t=lit+pon+aus;
+  const pct=x=>(100*x/t).toFixed(1)+'%';
+  document.getElementById('traza').innerHTML=`<table>
+    <tr><th>Origen del dato</th><th>Celdas</th><th>Proporción</th><th style="width:46%">Qué significa</th></tr>
+    <tr><td><span class="dot" style="background:#4C9A4C"></span>Literal</td><td class="n">${lit}</td><td>${pct(lit)}</td>
+      <td style="text-align:left">Valor impreso en la lámina y transcrito sin transformación.</td></tr>
+    <tr><td><span class="dot" style="background:#E08A3C"></span>Ponderado *</td><td class="n">${pon}</td><td>${pct(pon)}</td>
+      <td style="text-align:left">Reconstruido de la gráfica de tracking, que no publica tabla de valores. Error máximo de calibración: 0.257 pp, frente a ±4.3 pp de error muestral.</td></tr>
+    <tr><td><span class="dot" style="background:#C0504D"></span>Ausente</td><td class="n">${aus}</td><td>${pct(aus)}</td>
+      <td style="text-align:left">Marcador ocluido por otra serie del mismo color. No resuelto y no imputado. Listado en la hoja PENDIENTES del libro de auditoría.</td></tr>
+    <tr><td><b>Control de cierre</b></td><td class="n">26 / 26</td><td>100%</td>
+      <td style="text-align:left">Olas de intención de voto que suman entre 99.9 % y 100.3 % sin que se impusiera la normalización. Validación independiente de la reconstrucción.</td></tr>
+  </table>`;
+}
+
+function render(){
+  document.getElementById('stamp').textContent=
+    `Massive Caller · corte ${fmtOla(M.corte)} · 13 olas mensuales · N=${M.n} por municipio · M.E. ±${M.me}% · piloto: Guadalajara y Zapopan`;
+  kpis();rank();track();delta();nodec();comp();dona();tabla();traza();
+}
+
+const selM=document.getElementById('muni'), selO=document.getElementById('ola');
+M.municipios.forEach(m=>selM.add(new Option(m,m)));
+OLAS.slice().reverse().forEach(o=>selO.add(new Option('Ola: '+fmtOla(o),o)));
+selM.value=muni; selO.value=ola;
+selM.onchange=e=>{muni=e.target.value;render();};
+selO.onchange=e=>{ola=e.target.value;render();};
+document.getElementById('btnBase').onclick=function(){
+  base=base==='total'?'efectivo':'total';
+  this.textContent=base==='total'?'Base: total':'Base: voto efectivo *';
+  this.classList.toggle('on');kpis();rank();};
+render();
+</script>
+</body>
+</html>
