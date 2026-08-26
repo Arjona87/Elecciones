@@ -33,11 +33,11 @@ TAREAS = [
  (2, "Fase 0 · Extracción", "Tlajomulco y Tlaquepaque (26 láminas)", "CGES/DGAPP", "T1",
   "Concluido", "Cierre al 100 % en las 28 olas; error ≤0.15 pp", 1, 2, "done"),
  (3, "Fase 0 · Extracción", "Tonalá y El Salto (20 láminas)", "CGES/DGAPP", "T2",
-  "Programado", "Cierre al 100 % en todas sus olas", 2, 3, "go"),
+  "Concluido", "Cierre al 100 % en sus 26 olas", 2, 2, "done"),
  (4, "Fase 0 · Extracción", "Puerto Vallarta (12 láminas)", "CGES/DGAPP", "T3",
-  "Programado", "Cierre al 100 %; validar si su serie arranca en jul-25 o ago-25", 3, 3, "go"),
- (5, "Fase 0 · Extracción", "Resolución de las 77 celdas ocluidas", "CGES/DGAPP", "T4",
-  "Programado", "≤2 % de celdas AUSENTES sobre el registro total", 3, 4, "go"),
+  "Concluido", "Cierre al 100 % en sus 13 olas; serie arranca en ago-25", 2, 2, "done"),
+ (5, "Fase 0 · Extracción", "Resolución de las 92 celdas ocluidas restantes", "CGES/DGAPP", "T4",
+  "Programado", "≤2 % de celdas AUSENTES sobre el registro total (hoy 4.1 %)", 3, 4, "go"),
  (6, "Fase 1 · Auditoría", "Cierre de la hoja AUDITORÍA y PENDIENTES", "CGES/DGAPP", "T5",
   "Programado", "Cada hallazgo con diagnóstico y resolución trazable a página", 4, 4, "go"),
  (7, "Fase 1 · Auditoría", "Validación cruzada por segundo revisor", "CGES/DGAPP", "T6",
@@ -143,9 +143,9 @@ notas = [
  "dependen de decisiones externas (T18, T19, T20) y una del calendario de publicación de la fuente.",
  "La ruta crítica es T3 → T4 → T5 → T6 → T8 → T10 → T11 → T12 → T14 → T21 → T22. Un retraso ahí "
  "empuja la entrega; los demás bloques tienen holgura.",
- "El riesgo principal es T5: la resolución de celdas ocluidas depende de cuántas series comparta "
- "cada partido en los municipios restantes. Tonalá tiene 8 láminas y El Salto 12, por lo que se "
- "estima menor densidad de solapamiento que en Tlaquepaque.",
+ "El riesgo principal previsto era T5 (celdas ocluidas). Ejecutada la extracción completa, la "
+ "densidad de solapamiento resultó menor a la temida: quedan 92 celdas, concentradas en las "
+ "internas de MORENA, donde hasta 6 precandidatos comparten un mismo tono de rojo.",
  "T23 y T24 son de operación, no de construcción: validan que el sistema absorbe una ola nueva "
  "sin intervención de código. Si esa prueba falla, se reabre T9.",
 ]

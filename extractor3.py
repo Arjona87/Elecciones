@@ -126,6 +126,7 @@ def run(page, series, n_points, x_first, x_last, tol=60, box=BOX, max_jump_pp=9.
     # ---- trazado hacia atras con asignacion optima por color ----
     ypos = {s["name"]: [None] * n_points for s in series}
     last = {s["name"]: anchor[s["name"]] for s in series}
+    solapadas = set()
     for s in series:
         ypos[s["name"]][-1] = anchor[s["name"]]
 
@@ -146,11 +147,25 @@ def run(page, series, n_points, x_first, x_last, tol=60, box=BOX, max_jump_pp=9.
                     if abs(cy - p) <= max_jump:
                         cost[i, j] = abs(cy - p)
             r, cidx = linear_sum_assignment(cost)
+            asignadas = set()
             for i, j in zip(r, cidx):
                 if cost[i, j] < 1e5:
                     ypos[grp[i]["name"]][t] = cl[j]
                     last[grp[i]["name"]] = cl[j]
+                    asignadas.add(i)
+            # Fallback: si hay menos clusteres que series, las lineas que faltan estan
+            # superpuestas sobre una ya asignada. Se comparte el cluster mas cercano y la
+            # celda queda marcada como superpuesta para declararla en el registro.
+            if len(cl) < len(grp):
+                for i, s2 in enumerate(grp):
+                    if i in asignadas or last[s2["name"]] is None:
+                        continue
+                    cand = min(cl, key=lambda c: abs(c - last[s2["name"]]))
+                    if abs(cand - last[s2["name"]]) <= max_jump:
+                        ypos[s2["name"]][t] = cand
+                        last[s2["name"]] = cand
+                        solapadas.add((s2["name"], t))
 
     vals = {s["name"]: [None if y is None else round(float(f(y)), 1) for y in ypos[s["name"]]]
             for s in series}
-    return vals, err
+    return vals, err, solapadas

@@ -99,8 +99,8 @@ footer b{color:var(--ink)}
     </div>
 
     <div class="card">
-      <h3>Las cuatro plazas del AMG no se mueven igual</h3>
-      <p class="why">Comparativo del puntero y su perseguidor en cada municipio. La brecha revela dónde la elección está realmente en disputa.</p>
+      <h3>Los siete municipios no se mueven igual</h3>
+      <p class="why">Puntero y perseguidor en cada municipio. La brecha revela dónde la elección está en disputa. La brecha revela dónde la elección está realmente en disputa.</p>
       <div class="wrap"><canvas id="cComp"></canvas></div>
     </div>
 
@@ -299,14 +299,14 @@ function traza(){
       <td style="text-align:left">Reconstruido de la gráfica de tracking, que no publica tabla de valores. Error máximo de calibración: 0.257 pp, frente a ±4.3 pp de error muestral.</td></tr>
     <tr><td><span class="dot" style="background:#C0504D"></span>Ausente</td><td class="n">${aus}</td><td>${pct(aus)}</td>
       <td style="text-align:left">Marcador ocluido por otra serie del mismo color. No resuelto y no imputado. Listado en la hoja PENDIENTES del libro de auditoría.</td></tr>
-    <tr><td><b>Control de cierre</b></td><td class="n">54 / 54</td><td>100%</td>
+    <tr><td><b>Control de cierre</b></td><td class="n">93 / 93</td><td>100%</td>
       <td style="text-align:left">Olas de intención de voto que suman entre 99.9 % y 100.3 % sin que se impusiera la normalización. Validación independiente de la reconstrucción.</td></tr>
   </table>`;
 }
 
 function render(){
   document.getElementById('stamp').textContent=
-    `Massive Caller · corte ${fmtOla(M.corte)} · hasta 14 olas mensuales · N=${M.n} por municipio · M.E. ±${M.me}% · 4 municipios procesados de 7`;
+    `Massive Caller · corte ${fmtOla(M.corte)} · hasta 14 olas mensuales · N=${M.n} por municipio · M.E. ±${M.me}% · 7 municipios · 82 láminas`;
   kpis();rank();track();delta();nodec();comp();dona();tabla();traza();
 }
 

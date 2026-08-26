@@ -6,7 +6,7 @@ from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
-D = json.load(open("registro_piloto.json"))
+D = json.load(open("registro_full.json"))
 OBS = D["observaciones"]
 CAL = {c["pagina"]: c["error_calibracion_pp"] for c in D["calibracion"]}
 
@@ -23,7 +23,7 @@ THIN = Border(*[Side(style="thin", color="BFBFBF")] * 4)
 
 FILL_BY = {"LITERAL": FILL_LIT, "PONDERADO": FILL_PON, "AUSENTE": FILL_AUS}
 
-OLAS = ["2025-08-12", "2025-09-12", "2025-10-12", "2025-11-12", "2025-12-12",
+OLAS = ["2025-07-12", "2025-08-12", "2025-09-12", "2025-10-12", "2025-11-12", "2025-12-12",
         "2026-01-12", "2026-02-12", "2026-03-12", "2026-04-12", "2026-05-12",
         "2026-06-12", "2026-07-12", "2026-08-12"]
 
@@ -46,7 +46,9 @@ COLS = ["ola_fecha", "entidad", "cve_inegi", "municipio", "tipo_pregunta", "univ
         "partido_contexto", "actor", "valor_pct", "muestra_n", "margen_error_pct",
         "casa_encuestadora", "metodo_captura", "pagina_fuente", "estatus_dato", "nota"]
 head(ws, COLS, [11, 9, 9, 16, 19, 26, 10, 34, 10, 9, 11, 16, 14, 8, 12, 60])
-CVE = {"Guadalajara": "14039", "Zapopan": "14120"}
+CVE = {"Guadalajara": "14039", "Zapopan": "14120", "San Pedro Tlaquepaque": "14098",
+       "Tlajomulco de Zúñiga": "14097", "Puerto Vallarta": "14067", "El Salto": "14030",
+       "Tonalá": "14101"}
 UNIV = {"INTENCION_PARTIDO": "Total de entrevistados del municipio",
         "PRECANDIDATO": "Condicional: declarantes del partido",
         "REELECCION": "Total de entrevistados del municipio"}
@@ -68,14 +70,15 @@ N_DM = r - 1
 ws = wb.create_sheet("EVOLUCION_TEMPORAL")
 cols = ["municipio", "partido"] + OLAS + ["Δ 12 meses (pp)", "Δ último mes (pp)",
                                           "máximo", "mínimo", "amplitud (pp)"]
-head(ws, cols, [15, 16] + [11] * 13 + [17, 17, 10, 10, 14])
+head(ws, cols, [15, 16] + [11] * 14 + [17, 17, 10, 10, 14])
 serie = defaultdict(dict)
 for o in OBS:
     if o["tipo_pregunta"] == "INTENCION_PARTIDO":
         serie[(o["municipio"], o["actor"])][o["ola"]] = o
 ORD = ["MORENA", "MC", "PAN", "PRI", "PT", "PVEM", "AÚN NO DECIDE"]
 r = 2
-for muni in ["Guadalajara", "Zapopan"]:
+for muni in ["Guadalajara", "Zapopan", "San Pedro Tlaquepaque", "Tlajomulco de Zúñiga",
+             "Puerto Vallarta", "El Salto", "Tonalá"]:
     for p in ORD:
         ws.cell(r, 1, muni).font = F_B
         ws.cell(r, 2, p).font = F_BB
@@ -85,17 +88,17 @@ for muni in ["Guadalajara", "Zapopan"]:
             c.font = F_B; c.number_format = "0.0"; c.border = THIN
             if o: c.fill = FILL_BY[o["estatus"]]
         L = get_column_letter
-        ws.cell(r, 16, f"={L(15)}{r}-{L(3)}{r}")
-        ws.cell(r, 17, f"={L(15)}{r}-{L(14)}{r}")
-        ws.cell(r, 18, f"=MAX({L(3)}{r}:{L(15)}{r})")
-        ws.cell(r, 19, f"=MIN({L(3)}{r}:{L(15)}{r})")
-        ws.cell(r, 20, f"={L(18)}{r}-{L(19)}{r}")
-        for k in range(16, 21):
+        ws.cell(r, 17, f"={L(16)}{r}-{L(3)}{r}")
+        ws.cell(r, 18, f"={L(16)}{r}-{L(15)}{r}")
+        ws.cell(r, 19, f"=MAX({L(3)}{r}:{L(16)}{r})")
+        ws.cell(r, 20, f"=MIN({L(3)}{r}:{L(16)}{r})")
+        ws.cell(r, 21, f"={L(19)}{r}-{L(20)}{r}")
+        for k in range(17, 22):
             ws.cell(r, k).font = F_BB; ws.cell(r, k).number_format = "+0.0;-0.0;0.0"
         r += 1
     # fila de control: la suma debe cerrar en 100
     ws.cell(r, 2, "SUMA DE CONTROL").font = F_BB
-    for j in range(3, 16):
+    for j in range(3, 17):
         L = get_column_letter(j)
         ws.cell(r, j, f"=SUM({L}{r-7}:{L}{r-1})")
         ws.cell(r, j).font = F_BB; ws.cell(r, j).number_format = "0.0"
@@ -136,10 +139,11 @@ ws = wb.create_sheet("ESTRUCTURA_SUBNACIONAL")
 head(ws, ["cve_inegi", "municipio", "nivel", "distrito_local", "sección_electoral",
           "ola_fecha", "actor", "valor_pct", "muestra_n", "fuente"],
      [11, 26, 12, 15, 18, 12, 30, 11, 11, 20])
-plantilla = [("14039", "Guadalajara", "MUNICIPIO"), ("14120", "Zapopan", "MUNICIPIO"),
-             ("14098", "San Pedro Tlaquepaque", "MUNICIPIO"), ("14101", "Tonalá", "MUNICIPIO"),
-             ("14097", "Tlajomulco de Zúñiga", "MUNICIPIO"), ("14030", "El Salto", "MUNICIPIO"),
-             ("14067", "Puerto Vallarta", "MUNICIPIO")]
+plantilla = [("14039", "Guadalajara", "PROCESADO"), ("14120", "Zapopan", "PROCESADO"),
+             ("14098", "San Pedro Tlaquepaque", "PROCESADO"),
+             ("14097", "Tlajomulco de Zúñiga", "PROCESADO"),
+             ("14101", "Tonalá", "PROCESADO"), ("14030", "El Salto", "PROCESADO"),
+             ("14067", "Puerto Vallarta", "PROCESADO")]
 for i, (cve, nom, niv) in enumerate(plantilla, 2):
     for j, v in enumerate([cve, nom, niv], 1):
         ws.cell(i, j, v).font = F_B
@@ -166,7 +170,7 @@ AUD = [
   "frente a ±4.3 pp de error muestral."),
  (4, "3,73", "Validación independiente del cierre al 100 %",
   "Las series se reconstruyeron por separado, sin imponer que sumaran 100.",
-  "Las 26 olas de intención de voto cierran entre 99.9 % y 100.3 %."),
+  "Las 93 olas de intención de voto cierran entre 99.5 % y 100.5 %."),
  (5, "3", "PRI Guadalajara MAR-26: marcador ocluido",
   "El marcador del PRI queda exactamente bajo la serie AÚN NO DECIDE en el cruce.",
   "Lectura por ampliación: 11.9. Validado por residual."),
@@ -176,9 +180,20 @@ AUD = [
  (7, "3", "PAN Guadalajara JUL-26: cruce exacto",
   "PAN y AÚN NO DECIDE se intersecan en el mismo píxel.",
   "Ambos valen 14.3. Triple validación: ampliación, residual y valor de la otra serie."),
- (8, "5,9,79,81", "64 celdas no resueltas (8.5 % del registro)",
+ (8, "varias", "92 celdas no resueltas (4.1 % del registro)",
   "Oclusión entre precandidatos del mismo partido, que la fuente grafica con color idéntico.",
   "Marcadas AUSENTE. Listadas en PENDIENTES. Ninguna rellenada automáticamente."),
+ (11, "18,19", "Nombre de precandidato truncado en la fuente",
+  "La lámina 18 de Puerto Vallarta rotula 'RA AGUILAR ESTRADA'; el nombre de pila aparece "
+  "cortado en el archivo original.",
+  "Se registra literalmente como aparece. NO se completa el nombre por inferencia."),
+ (12, "22,23,60,61", "Cobertura de partidos heterogénea entre municipios",
+  "El PVEM tiene interna medida solo en Tlaquepaque y Puerto Vallarta; el PRI no se mide en "
+  "Puerto Vallarta ni Tonalá; Tonalá no tiene pregunta de reelección.",
+  "El esquema admite ausencia de partido por municipio; no se imputan celdas vacías."),
+ (13, "varias", "Longitud de serie heterogénea",
+  "Las series van de 3 olas (PVEM Tlaquepaque) a 14 (partidos en Tlajomulco y Tlaquepaque).",
+  "El esquema es de lista por ola, no matriz fija. Las olas sin medición quedan vacías."),
  (9, "4–13, 74–81", "Dos universos distintos en el mismo estudio",
   "U1 (voto por partido) es sobre el total; U2 (precandidato) es condicional a declarar ese partido.",
   "Separados en hojas distintas. El voto efectivo se calcula y se marca como derivado."),
@@ -265,6 +280,6 @@ for i, (a, b) in enumerate(rows, 1):
     if len(b) > 90:
         ws.row_dimensions[i].height = 42
 
-wb.save("/mnt/user-data/outputs/AUDITORIA_PILOTO_GDL_ZAPOPAN.xlsx")
+wb.save("/mnt/user-data/outputs/AUDITORIA_JALISCO_7MUNICIPIOS.xlsx")
 print("filas DATOS_MAESTROS:", N_DM)
 print("guardado")
