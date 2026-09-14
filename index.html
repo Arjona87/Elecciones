@@ -2,256 +2,117 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2318345D'/%3E%3Crect x='7' y='17' width='4' height='9' fill='%23F08013'/%3E%3Crect x='14' y='11' width='4' height='15' fill='%23fff'/%3E%3Crect x='21' y='20' width='4' height='6' fill='%23fff' opacity='.6'/%3E%3C/svg%3E">
+<meta name="description" content="Tablero de preferencia electoral municipal en Jalisco rumbo a las alcaldías 2027, con trazabilidad del origen de cada cifra.">
 <title>Preferencia electoral municipal — Jalisco, alcaldías 2027</title>
 
-<!-- Versión mayor fijada: sin el @4 se sirve "latest" y una versión 5 con cambios
-     incompatibles rompería el tablero sin que nadie toque el archivo. -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<!-- El tema se aplica antes del primer pintado. Leerlo al final del body
+     provocaba un destello blanco en cada carga a quien usa modo oscuro. -->
+<script>
+try{
+  if(localStorage.getItem('jal2027-tema')==='oscuro')
+    document.documentElement.setAttribute('data-tema','oscuro');
+}catch(e){/* sin almacenamiento disponible: se queda en tema claro */}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/estilos.css">
 
-<!-- El tema se aplica antes de pintar: leerlo al final del body provocaba un
-     destello blanco en cada carga a quien usa el modo oscuro. -->
-<script>
-try {
-  var _t = localStorage.getItem('jal2027-tema');
-  if (_t === 'oscuro') document.documentElement.setAttribute('data-tema', 'oscuro');
-} catch (e) { /* sin almacenamiento disponible: se queda en tema claro */ }
-</script>
-
-<style>
-/* ===================================================================
-   TOKENS
-   =================================================================== */
-:root{
-  --morena:#B71C1C; --pan:#0033A0; --pri:#E31B23; --pvem:#50B848;
-  --mc:#FF8200; --pt:#E30613; --otros:#707070; --nodec:#1A1A1A;
-
-  --ink:#15202B; --ink-soft:#3D4C5A; --muted:#5B6B7B;
-  --surface:#FFFFFF; --surface-2:#F6F8FA; --surface-3:#EEF2F6;
-  --canvas:#F4F7F9; --topbar:#FFFFFF;
-  --line:#E3E8EE; --line-soft:#EFF3F7; --grid-line:#EEF2F6;
-  --brand:#18345D; --brand-deep:#0E2340; --accent:#F08013;
-  --ok:#2E7D32; --warn:#B06A2C; --risk:#C0392B;
-  --shadow:0 1px 2px rgba(16,32,48,.05);
-  --shadow-lift:0 6px 20px rgba(16,32,48,.10);
-  --r-sm:5px; --r-md:9px; --gap:14px; --maxw:1560px;
-}
-html[data-tema="oscuro"]{
-  --ink:#E8EEF4; --ink-soft:#BCC9D6; --muted:#8B9BAB;
-  --surface:#141C24; --surface-2:#1A242E; --surface-3:#222E3A;
-  --canvas:#0E151B; --topbar:#141C24;
-  --line:#2A3744; --line-soft:#222E3A; --grid-line:#243140;
-  --brand:#7FA8DC; --brand-deep:#0A121A; --accent:#F5A04B;
-  --shadow:0 1px 2px rgba(0,0,0,.35);
-  --shadow-lift:0 6px 20px rgba(0,0,0,.45);
-  --morena:#E04545; --pan:#5B8DEF; --pri:#FF5A5F; --pvem:#5FD16A;
-  --mc:#FFA033; --pt:#FF7B6B; --otros:#8A97A4; --nodec:#DCE5EE;
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--canvas);color:var(--ink);
-  font:14px/1.55 Inter,Arial,Helvetica,sans-serif;
-  transition:background .25s ease,color .25s ease}
-h1,h2,h3,.num,.kpi .val{font-family:Poppins,Arial,sans-serif}
-
-/* ===================================================================
-   BARRA SUPERIOR
-   =================================================================== */
-header{background:var(--topbar);border-bottom:1px solid var(--line);
-  padding:11px 20px;position:sticky;top:0;z-index:40;box-shadow:var(--shadow)}
-.hrow{display:flex;align-items:center;gap:16px;flex-wrap:wrap;max-width:var(--maxw);margin:0 auto}
-#custom-logo{min-width:128px;height:38px;border:1px dashed var(--line);
-  border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;
-  color:var(--muted);font-size:9.5px;letter-spacing:.5px;flex:0 0 auto}
-.htitle{font-size:15px;font-weight:800;letter-spacing:-.2px;line-height:1.2}
-.hsub{font-size:11px;color:var(--muted);margin-top:2px}
-.controls{margin-left:auto;display:flex;gap:7px;flex-wrap:wrap;align-items:center}
-select,button{font:12.5px Inter,Arial;padding:7px 10px;border:1px solid var(--line);
-  border-radius:var(--r-sm);background:var(--surface);color:var(--ink);cursor:pointer;
-  transition:background .18s ease,border-color .18s ease,color .18s ease}
-select:hover,button:hover{border-color:var(--brand)}
-button:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-button.on{background:var(--ink);color:var(--surface);border-color:var(--ink)}
-.icon-btn{width:34px;padding:0;height:32px;display:grid;place-items:center;font-size:14px}
-
-nav.cinta{max-width:var(--maxw);margin:9px auto 0;display:flex;gap:6px;
-  overflow-x:auto;padding-bottom:2px}
-nav.cinta a{font-size:11.5px;padding:5px 11px;border-radius:20px;text-decoration:none;
-  color:var(--muted);background:var(--surface-2);border:1px solid var(--line);
-  white-space:nowrap;transition:all .18s ease}
-nav.cinta a:hover{color:var(--ink);border-color:var(--brand)}
-nav.cinta a.activo{background:var(--brand);color:#fff;border-color:var(--brand)}
-
-/* ===================================================================
-   ESTRUCTURA
-   =================================================================== */
-main{padding:18px 20px 70px;max-width:var(--maxw);margin:0 auto}
-section{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);
-  margin-bottom:16px;box-shadow:var(--shadow);overflow:hidden;scroll-margin-top:118px}
-.panel-cab{display:flex;align-items:center;gap:11px;padding:13px 17px;
-  border-bottom:1px solid var(--line-soft);cursor:pointer;user-select:none;
-  background:var(--surface-2);transition:background .18s ease}
-.panel-cab:hover{background:var(--surface-3)}
-.panel-cab h2{margin:0;font-size:14.5px;font-weight:800;letter-spacing:-.1px}
-.panel-nota{font-size:11.5px;color:var(--muted);flex:1}
-.panel-toggle{border:1px solid var(--line);background:var(--surface);color:var(--muted);
-  width:25px;height:25px;border-radius:var(--r-sm);font-size:10px;
-  display:inline-flex;align-items:center;justify-content:center;
-  transition:transform .22s ease;flex:0 0 auto}
-section.cerrado .panel-toggle{transform:rotate(-90deg)}
-section.cerrado .panel-cuerpo{display:none}
-.panel-cuerpo{padding:16px 17px 18px}
-
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(186px,1fr));gap:11px;margin-bottom:15px}
-.kpi{background:var(--surface-2);border:1px solid var(--line);border-radius:var(--r-md);
-  padding:12px 14px;transition:transform .18s ease,box-shadow .18s ease}
-.kpi:hover{transform:translateY(-2px);box-shadow:var(--shadow-lift)}
-.kpi .lab{font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);font-weight:600}
-.kpi .val{font-size:25px;font-weight:800;margin-top:5px;line-height:1.12}
-.kpi .sub{font-size:11.5px;color:var(--muted);margin-top:4px}
-.kpi svg{display:block;margin-top:7px}
-
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(440px,1fr));gap:var(--gap)}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);padding:15px 17px}
-.card.wide{grid-column:1/-1}
-.card h3{margin:0 0 3px;font-size:14px;font-weight:700;letter-spacing:-.1px;line-height:1.35}
-.card p.why{margin:0 0 12px;font-size:11.8px;color:var(--muted);line-height:1.5}
-.wrap{position:relative;height:290px}
-.wrap.tall{height:380px}
-.wrap.xtall{height:440px}
-
-/* ===================================================================
-   TERMOMETRO DE COMPETITIVIDAD — elemento distintivo del tablero
-   =================================================================== */
-.termo{display:grid;gap:7px}
-.termo-fila{display:grid;grid-template-columns:180px 1fr 132px;gap:11px;align-items:center;
-  padding:7px 9px;border-radius:var(--r-sm);transition:background .18s ease}
-.termo-fila:hover{background:var(--surface-2)}
-.termo-mun{font-size:12.5px;font-weight:600}
-.termo-pista{position:relative;height:22px;background:var(--surface-3);
-  border-radius:11px;overflow:hidden}
-.termo-barra{position:absolute;left:0;top:0;bottom:0;border-radius:11px;
-  width:0;transition:width .9s cubic-bezier(.22,.8,.28,1)}
-.termo-umbral{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink-soft);opacity:.6}
-.termo-et{font-size:11.5px;text-align:right;font-weight:700;font-family:Poppins,Arial}
-.termo-leyenda{font-size:11px;color:var(--muted);margin-top:11px;display:flex;gap:16px;flex-wrap:wrap}
-.pastilla{display:inline-flex;align-items:center;gap:5px}
-.pastilla i{width:10px;height:10px;border-radius:3px;display:inline-block}
-
-/* ===================================================================
-   TABLAS Y MATRIZ DE CALOR
-   =================================================================== */
-table{width:100%;border-collapse:collapse;font-size:12.5px}
-th,td{padding:6px 8px;border-bottom:1px solid var(--line-soft);text-align:right}
-th:first-child,td:first-child{text-align:left}
-th{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);font-weight:700}
-td.n{font-family:Poppins;font-weight:600}
-.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
-.dot.rayado{background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.9) 0 2px,transparent 2px 4px)}
-.tag{display:inline-block;font-size:9.5px;padding:2px 7px;border-radius:20px;
-  background:var(--surface-3);color:var(--muted);margin-left:6px;vertical-align:middle;font-weight:600}
-.tag.warn{background:#FCE4D6;color:#8A4B12}
-html[data-tema="oscuro"] .tag.warn{background:#4A2E14;color:#F0B77A}
-
-.calor td{text-align:center;font-family:Poppins;font-weight:600;font-size:12px;
-  border:2px solid var(--surface);transition:transform .15s ease}
-.calor td:hover{transform:scale(1.06)}
-.calor td:first-child{text-align:left;background:transparent;color:var(--ink);font-weight:600}
-.est{font-size:9.5px;color:var(--warn)}
-
-.nota{background:var(--surface-2);border-left:3px solid var(--accent);border-radius:var(--r-sm);
-  padding:10px 13px;font-size:12.3px;margin-bottom:14px;line-height:1.55}
-.nota.alerta{background:#FFF7E8;border:1px solid #F5D9A8;border-left:4px solid var(--accent)}
-html[data-tema="oscuro"] .nota.alerta{background:#2B2113;border-color:#5A431F}
-
-/* ===================================================================
-   CARGA
-   =================================================================== */
-.sk{background:linear-gradient(90deg,var(--surface-2) 25%,var(--surface-3) 37%,var(--surface-2) 63%);
-  background-size:400% 100%;animation:skBrillo 1.4s ease infinite;border-radius:var(--r-sm)}
-@keyframes skBrillo{0%{background-position:100% 0}100%{background-position:-100% 0}}
-@keyframes aparecer{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
-.aparece{animation:aparecer .34s ease both}
-
-footer{border-top:1px solid var(--line);margin-top:22px;padding:16px 20px;
-  font-size:11.3px;color:var(--muted);background:var(--surface);line-height:1.65}
-footer b{color:var(--ink)}
-footer .wrap-f{max-width:var(--maxw);margin:0 auto}
-
-@media (max-width:900px){
-  .grid{grid-template-columns:1fr}
-  .termo-fila{grid-template-columns:112px 1fr 88px;gap:8px}
-  .wrap,.wrap.tall,.wrap.xtall{height:310px}
-}
-@media (prefers-reduced-motion:reduce){
-  *{animation-duration:.01ms !important;transition-duration:.01ms !important}
-}
-@media print{
-  header,nav.cinta,.controls,.panel-toggle{display:none !important}
-  section{break-inside:avoid;box-shadow:none;border-color:#ccc}
-  section.cerrado .panel-cuerpo{display:block !important}
-  .card{break-inside:avoid}
-  body{background:#fff}
-}
-</style>
+<!-- Versión mayor fijada: sin el @4 se sirve "latest" y una versión 5 con
+     cambios incompatibles rompería el tablero sin que nadie toque el archivo. -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.js" defer></script>
+<script src="data.js" defer></script>
+<script src="assets/tablero.js" defer></script>
 </head>
+
 <body>
 
-<header>
-  <div class="hrow">
-    <div id="custom-logo">[LOGO_CLIENTE_PLACEHOLDER]</div>
-    <div>
-      <div class="htitle">Preferencia electoral municipal — Jalisco, alcaldías 2027</div>
-      <div class="hsub" id="stamp">Cargando…</div>
+<a class="oculto-visual" href="#s-panorama">Saltar al contenido</a>
+
+<header class="barra">
+  <div class="barra-fila">
+    <div class="marca" id="logo-cliente">[LOGO_CLIENTE]</div>
+    <div class="titulo-grupo">
+      <h1 class="titulo">Preferencia electoral municipal — Jalisco, alcaldías 2027</h1>
+      <p class="sello" id="sello">Cargando el tablero…</p>
     </div>
-    <div class="controls">
-      <select id="muni"></select>
-      <select id="ola"></select>
-      <button id="btnBase" class="on">Base: total</button>
-      <button id="btnTema" class="icon-btn" title="Cambiar entre tema claro y oscuro">&#9686;</button>
-      <button id="btnPrint" class="icon-btn" title="Imprimir el tablero completo">&#9113;</button>
+
+    <button type="button" class="btn-filtros" id="btn-filtros"
+            aria-expanded="false" aria-controls="controles">Filtros</button>
+
+    <div class="controles" id="controles">
+      <label class="oculto-visual" for="sel-muni">Municipio</label>
+      <select id="sel-muni"></select>
+
+      <label class="oculto-visual" for="sel-ola">Ola de medición</label>
+      <select id="sel-ola"></select>
+
+      <button type="button" id="btn-base" aria-pressed="false"
+              title="Alternar entre la base total y el voto efectivo, que reparte el voto no declarado">Base: total</button>
+
+      <button type="button" id="btn-tema" class="btn-icono"
+              title="Cambiar entre tema claro y oscuro"
+              aria-label="Cambiar entre tema claro y oscuro">&#9686;</button>
+
+      <button type="button" id="btn-imprimir" class="btn-icono"
+              title="Imprimir el tablero completo"
+              aria-label="Imprimir el tablero completo">&#9113;</button>
     </div>
   </div>
-  <nav class="cinta" id="nav"></nav>
+
+  <nav class="cinta" id="cinta" aria-label="Secciones del tablero"></nav>
 </header>
 
-<main>
-  <section id="s-panorama">
-    <div class="panel-cab"><h2>Panorama del municipio</h2>
+<main id="tablero">
+
+  <!-- ============================ PANORAMA ============================ -->
+  <section class="panel" id="s-panorama" aria-labelledby="h-panorama">
+    <button type="button" class="panel-cab" aria-expanded="true" aria-controls="c-panorama">
+      <h2 id="h-panorama">Panorama del municipio</h2>
       <span class="panel-nota">Lectura de la plaza seleccionada en la ola elegida</span>
-      <span class="panel-toggle">&#9662;</span></div>
-    <div class="panel-cuerpo">
-      <div class="nota alerta" id="alerta"><span class="sk" style="display:block;height:17px"></span></div>
+      <span class="panel-flecha" aria-hidden="true">&#9662;</span>
+    </button>
+    <div class="panel-cuerpo" id="c-panorama">
+
+      <div class="nota alerta" id="alerta" role="status" aria-live="polite">
+        <span class="sk" style="display:block;height:17px"></span>
+      </div>
+
       <div class="kpis" id="kpis"></div>
-      <div class="grid">
-        <div class="card wide">
+
+      <div class="rejilla">
+        <div class="tarjeta ancha">
           <h3>La ventaja del puntero se mide contra el error de la diferencia, no contra el de la encuesta</h3>
-          <p class="why">Ranking de la ola seleccionada. La línea horizontal sobre cada barra es el intervalo de confianza al 95 %: si los intervalos de dos partidos se traslapan, la diferencia entre ellos no es estadísticamente significativa.</p>
-          <div class="wrap tall"><canvas id="cRank"></canvas></div>
+          <p class="porque">Ranking de la ola seleccionada. La línea horizontal sobre cada barra es el intervalo de confianza al 95 %: si los intervalos de dos partidos se traslapan, la diferencia entre ellos no es estadísticamente significativa.</p>
+          <div class="lienzo alto" data-vista="rank"><canvas id="g-rank"></canvas></div>
         </div>
-        <div class="card wide">
-          <h3 id="tTrack">La evolución es el dato, no la foto</h3>
-          <p class="why">Serie mensual completa por partido. Los puntos de la última ola provienen de etiquetas impresas en la fuente; los anteriores fueron reconstruidos de la gráfica de tracking y van marcados con asterisco en el detalle.</p>
-          <div class="wrap tall"><canvas id="cTrack"></canvas></div>
+
+        <div class="tarjeta ancha">
+          <h3 id="t-track">La evolución es el dato, no la foto</h3>
+          <p class="porque">Serie mensual completa por partido. Los puntos de la última ola provienen de etiquetas impresas en la fuente; los anteriores fueron reconstruidos de la gráfica de tracking y van marcados con asterisco en el detalle.</p>
+          <div class="lienzo alto" data-vista="track"><canvas id="g-track"></canvas></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="s-comparativo">
-    <div class="panel-cab"><h2>Los siete municipios de un vistazo</h2>
+  <!-- ========================== COMPARATIVO ========================== -->
+  <section class="panel" id="s-comparativo" aria-labelledby="h-comparativo">
+    <button type="button" class="panel-cab" aria-expanded="true" aria-controls="c-comparativo">
+      <h2 id="h-comparativo">Los siete municipios de un vistazo</h2>
       <span class="panel-nota">Comparación simultánea, sin cambiar de plaza en el selector</span>
-      <span class="panel-toggle">&#9662;</span></div>
-    <div class="panel-cuerpo">
+      <span class="panel-flecha" aria-hidden="true">&#9662;</span>
+    </button>
+    <div class="panel-cuerpo" id="c-comparativo">
 
-      <div class="card wide" style="margin-bottom:14px">
+      <div class="tarjeta ancha" style="margin-bottom:var(--gap)">
         <h3>Termómetro de competitividad: dónde la elección sigue abierta</h3>
-        <p class="why">Cada plaza se ordena por la holgura del puntero, es decir su ventaja sobre el segundo lugar menos el error de la diferencia. Si la holgura es negativa, la ventaja cabe dentro del error y la plaza está en empate técnico. La marca vertical es el umbral de significancia.</p>
-        <div class="termo" id="termo"></div>
+        <p class="porque">Cada plaza se ordena por la holgura del puntero, es decir su ventaja sobre el segundo lugar menos el error de la diferencia. Si la holgura es negativa, la ventaja cabe dentro del error y la plaza está en empate técnico. La marca vertical es el umbral de significancia.</p>
+        <div class="termo" id="termo" data-vista="termo"></div>
         <div class="termo-leyenda">
           <span class="pastilla"><i style="background:var(--risk)"></i>Empate técnico — plaza en disputa</span>
           <span class="pastilla"><i style="background:var(--warn)"></i>Ventaja estrecha — menos de 5 pp de holgura</span>
@@ -259,705 +120,133 @@ footer .wrap-f{max-width:var(--maxw);margin:0 auto}
         </div>
       </div>
 
-      <div class="grid">
-        <div class="card wide">
+      <div class="rejilla">
+        <div class="tarjeta ancha">
           <h3>Intención de voto por partido en las siete plazas</h3>
-          <p class="why">Barras verticales agrupadas, con los municipios ordenados por la fuerza del puntero. Permite ver de un golpe qué partido gana dónde y con cuánto margen.</p>
-          <div class="wrap xtall"><canvas id="cMuniPartido"></canvas></div>
+          <p class="porque">Municipios ordenados por la fuerza del puntero. Permite ver de un golpe qué partido gana dónde y con cuánto margen.</p>
+          <div class="lienzo xalto gira" data-vista="muniPartido"><canvas id="g-muni-partido"></canvas></div>
         </div>
 
-        <div class="card">
+        <div class="tarjeta">
           <h3>La ventaja del puntero contra su propio margen de error</h3>
-          <p class="why">Cada barra es la distancia entre el primero y el segundo lugar. La línea punteada es el margen de error de esa diferencia. Donde la barra no alcanza la línea, el resultado es un empate técnico.</p>
-          <div class="wrap tall"><canvas id="cVentaja"></canvas></div>
+          <p class="porque">Cada barra es la distancia entre el primero y el segundo lugar. La línea punteada es el margen de error de esa diferencia. Donde la barra no alcanza la línea, el resultado es un empate técnico.</p>
+          <div class="lienzo alto gira" data-vista="ventaja"><canvas id="g-ventaja"></canvas></div>
         </div>
 
-        <div class="card">
+        <div class="tarjeta">
           <h3>El voto no declarado: cuánto del pastel sigue sin asignar</h3>
-          <p class="why">Proporción de electores que no declara partido, por municipio. La línea marca el promedio de las siete plazas: por encima de ella, el resultado es más volátil.</p>
-          <div class="wrap tall"><canvas id="cNoDecl"></canvas></div>
+          <p class="porque">Proporción de electores que no declara partido, por municipio. La línea marca el promedio de las siete plazas: por encima de ella, el resultado es más volátil.</p>
+          <div class="lienzo alto gira" data-vista="noDeclarado"><canvas id="g-no-decl"></canvas></div>
         </div>
 
-        <div class="card wide">
+        <div class="tarjeta ancha">
           <h3>Matriz de fuerza: cada partido en cada plaza</h3>
-          <p class="why">Intensidad de color proporcional al porcentaje de intención. Lee en horizontal para comparar partidos dentro de una plaza y en vertical para comparar una misma fuerza entre municipios.</p>
-          <div id="calor"></div>
+          <p class="porque">Intensidad de color proporcional al porcentaje de intención. Lee en horizontal para comparar partidos dentro de una plaza y en vertical para comparar una misma fuerza entre municipios.</p>
+          <div id="calor" data-vista="calor"></div>
         </div>
 
-        <div class="card">
+        <div class="tarjeta">
           <h3>Rechazo a la reelección del alcalde en funciones</h3>
-          <p class="why">Porcentaje que responde que NO votaría por el alcalde actual si buscara reelegirse. Solo aparecen los municipios donde la fuente hace esta pregunta.</p>
-          <div class="wrap tall"><canvas id="cReelec"></canvas></div>
+          <p class="porque">Porcentaje que responde que NO votaría por el alcalde actual si buscara reelegirse. Solo aparecen los municipios donde la fuente hace esta pregunta.</p>
+          <div class="lienzo alto gira" data-vista="reeleccion"><canvas id="g-reelec"></canvas></div>
         </div>
 
-        <div class="card">
+        <div class="tarjeta">
           <h3>Composición del voto en la plaza seleccionada</h3>
-          <p class="why">Estructura porcentual con el voto no declarado destacado en oscuro. Los porcentajes van escritos sobre cada segmento.</p>
-          <div class="wrap tall"><canvas id="cDona"></canvas></div>
+          <p class="porque">Estructura porcentual con el voto no declarado destacado en oscuro. Los porcentajes van escritos sobre cada segmento.</p>
+          <div class="lienzo alto" data-vista="dona"><canvas id="g-dona"></canvas></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="s-evolucion">
-    <div class="panel-cab"><h2>Movimiento en el tiempo</h2>
+  <!-- =========================== EVOLUCIÓN =========================== -->
+  <section class="panel" id="s-evolucion" aria-labelledby="h-evolucion">
+    <button type="button" class="panel-cab" aria-expanded="true" aria-controls="c-evolucion">
+      <h2 id="h-evolucion">Movimiento en el tiempo</h2>
       <span class="panel-nota">Qué cambió desde la primera medición de cada plaza</span>
-      <span class="panel-toggle">&#9662;</span></div>
-    <div class="panel-cuerpo">
-      <div class="grid">
-        <div class="card wide">
+      <span class="panel-flecha" aria-hidden="true">&#9662;</span>
+    </button>
+    <div class="panel-cuerpo" id="c-evolucion">
+      <div class="rejilla">
+        <div class="tarjeta ancha">
           <h3>Un mismo partido, siete trayectorias distintas</h3>
-          <p class="why">Series de tracking del partido elegido en las siete plazas a la vez. Si todas se mueven igual, el fenómeno es estatal; si divergen, es local y tiene explicación municipal.</p>
-          <div style="margin-bottom:10px"><select id="selPartido"></select></div>
-          <div class="wrap tall"><canvas id="cComparaPartido"></canvas></div>
+          <p class="porque">Series de tracking del partido elegido en las siete plazas a la vez. Si todas se mueven igual, el fenómeno es estatal; si divergen, es local y tiene explicación municipal.</p>
+          <div class="control-local">
+            <label class="oculto-visual" for="sel-partido">Partido a comparar</label>
+            <select id="sel-partido"></select>
+          </div>
+          <div class="lienzo alto" data-vista="comparaPartido"><canvas id="g-compara"></canvas></div>
         </div>
 
-        <div class="card">
+        <div class="tarjeta">
           <h3>Quién ganó y quién perdió terreno desde la primera ola</h3>
-          <p class="why">Variación del partido puntero en puntos porcentuales, entre la primera y la última medición de cada plaza. A la derecha del cero creció; a la izquierda se desgastó.</p>
-          <div class="wrap tall"><canvas id="cDelta"></canvas></div>
+          <p class="porque">Variación del partido puntero en puntos porcentuales, entre la primera y la última medición de cada plaza. A la derecha del cero creció; a la izquierda se desgastó.</p>
+          <div class="lienzo alto" data-vista="delta"><canvas id="g-delta"></canvas></div>
         </div>
 
-        <div class="card">
+        <div class="tarjeta">
           <h3>El indeciso como bolsa disponible</h3>
-          <p class="why">Evolución del voto no declarado en las siete plazas. Un indeciso al alza indica que el electorado se está soltando de sus anclas partidistas.</p>
-          <div class="wrap tall"><canvas id="cNoDec"></canvas></div>
+          <p class="porque">Evolución del voto no declarado en las siete plazas. Un indeciso al alza indica que el electorado se está soltando de sus anclas partidistas.</p>
+          <div class="lienzo alto" data-vista="noDec"><canvas id="g-no-dec"></canvas></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="s-internas">
-    <div class="panel-cab"><h2>Internas de los partidos</h2>
+  <!-- ============================ INTERNAS ============================ -->
+  <section class="panel" id="s-internas" aria-labelledby="h-internas">
+    <button type="button" class="panel-cab" aria-expanded="true" aria-controls="c-internas">
+      <h2 id="h-internas">Internas de los partidos</h2>
       <span class="panel-nota">Universo condicional: solo quienes ya declararon ese partido</span>
-      <span class="panel-toggle">&#9662;</span></div>
-    <div class="panel-cuerpo">
-      <div class="nota">Estas cifras <b>no son comparables</b> con las de intención de voto. La preferencia de precandidato (U2) se calcula solo sobre quienes declararon ese partido; la intención de voto (U1), sobre el total de entrevistados. Nunca se suman ni se grafican en el mismo eje.</div>
-      <div class="grid">
-        <div class="card wide">
+      <span class="panel-flecha" aria-hidden="true">&#9662;</span>
+    </button>
+    <div class="panel-cuerpo" id="c-internas">
+      <p class="nota">Estas cifras <b>no son comparables</b> con las de intención de voto. La preferencia de precandidato (U2) se calcula solo sobre quienes declararon ese partido; la intención de voto (U1), sobre el total de entrevistados. Nunca se suman ni se grafican en el mismo eje.</p>
+      <div class="rejilla">
+        <div class="tarjeta ancha">
           <h3>Dónde la candidatura ya está resuelta y dónde sigue abierta</h3>
-          <p class="why">Ventaja del precandidato puntero sobre el segundo, dentro de cada partido y municipio. Barras cortas significan interna disputada; barras largas, candidato natural.</p>
-          <div class="wrap xtall"><canvas id="cInternas"></canvas></div>
+          <p class="porque">Ventaja del precandidato puntero sobre el segundo, dentro de cada partido y municipio. Barras cortas significan interna disputada; barras largas, candidato natural. Cada barra puede provenir de una ola distinta: la ola efectiva se indica en el detalle emergente.</p>
+          <div class="lienzo xalto gira" data-vista="internas"><canvas id="g-internas"></canvas></div>
         </div>
-        <div class="card wide">
+        <div class="tarjeta ancha">
           <h3>Detalle de la interna en la plaza seleccionada</h3>
-          <p class="why">Preferencia interna y voto efectivo estimado sobre el total del electorado. La última columna es la que compara peras con peras.</p>
-          <div id="tabla"></div>
+          <p class="porque">Preferencia interna y voto efectivo estimado sobre el total del electorado. La última columna es la que compara peras con peras.</p>
+          <div id="tabla" data-vista="tabla"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="s-traza" class="cerrado">
-    <div class="panel-cab"><h2>Trazabilidad y método</h2>
+  <!-- ========================== TRAZABILIDAD ========================== -->
+  <section class="panel" id="s-traza" aria-labelledby="h-traza">
+    <button type="button" class="panel-cab" aria-expanded="false" aria-controls="c-traza">
+      <h2 id="h-traza">Trazabilidad y método</h2>
       <span class="panel-nota">Origen de cada cifra del tablero</span>
-      <span class="panel-toggle">&#9662;</span></div>
-    <div class="panel-cuerpo"><div id="traza"></div></div>
+      <span class="panel-flecha" aria-hidden="true">&#9662;</span>
+    </button>
+    <div class="panel-cuerpo" id="c-traza" hidden>
+      <div id="traza" data-vista="traza"></div>
+    </div>
   </section>
+
 </main>
 
-<footer><div class="wrap-f">
-  <b>Fuente:</b> Massive Caller. <i>Jalisco: intención al voto, alcaldías 2027</i>, corte 12 de agosto de 2026. N = 600 por municipio, margen de error declarado ±4.3 %.<br>
-  <b>Nota de método:</b> el margen de error recalculado con z = 1.96 y p = 0.5 para N = 600 arroja ±4.0 %; la discrepancia se reporta y no se corrige la cifra de la fuente. La casa encuestadora no publica factores de ponderación ni post-estratificación, por lo que no se supone ninguno.<br>
-  <b>*</b> Las cifras marcadas con asterisco fueron reconstruidas de las gráficas de tracking, que no incluyen tabla de valores. Error máximo de calibración: 0.257 puntos porcentuales.<br>
-  <b>Derechos:</b> D.R. © Massive Caller S.A. de C.V., 2026. Reproducción sujeta a referencia al autor. No difundir durante veda electoral. — Elaboración: Alejandro Arjona.
-</div></footer>
+<footer class="pie">
+  <div>
+    <p><b>Fuente:</b> Massive Caller. <i>Jalisco: intención al voto, alcaldías 2027</i>, corte 12 de agosto de 2026. N = 600 por municipio, margen de error declarado ±4.3 %.</p>
+    <p><b>Nota de método:</b> el margen de error recalculado con z = 1.96 y p = 0.5 para N = 600 arroja ±4.0 %; la discrepancia se reporta y no se corrige la cifra de la fuente. La casa encuestadora no publica factores de ponderación ni post-estratificación, por lo que no se supone ninguno.</p>
+    <p><b>*</b> Las cifras marcadas con asterisco fueron reconstruidas de las gráficas de tracking, que no incluyen tabla de valores. Error máximo de calibración: 0.257 puntos porcentuales.</p>
+    <p><b>Derechos:</b> D.R. © Massive Caller S.A. de C.V., 2026. Reproducción sujeta a referencia al autor. No difundir durante veda electoral. — Elaboración: Alejandro Arjona.</p>
+  </div>
+</footer>
 
-<script src="data.js"></script>
-<script>
-(function(){
-"use strict";
-var D=window.DATA, M=D.meta, OLAS=M.olas, MUNIS=M.municipios;
-var ORD=['MORENA','MC','PAN','PRI','PT','PVEM','AÚN NO DECIDE'];
-var PARTIDOS=['MORENA','MC','PAN','PRI','PT','PVEM'];
+<noscript>
+  <div class="falla">
+    <h2>El tablero necesita JavaScript</h2>
+    <p>Las gráficas y las tablas se construyen en el navegador a partir de <code>data.js</code>. Activa JavaScript para consultarlo. Los libros de auditoría en formato XLSX del repositorio contienen las mismas cifras sin depender del navegador.</p>
+  </div>
+</noscript>
 
-var VAR={MORENA:'--morena',MC:'--mc',PAN:'--pan',PRI:'--pri',PT:'--pt',
-         PVEM:'--pvem','AÚN NO DECIDE':'--nodec',OTRO:'--otros'};
-function css(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim();}
-function COL(p){return css(VAR[p]||'--otros');}
-/* Paleta municipal de 7 tonos distinguibles: antes eran gris y negro para todos. */
-var COLM=['#1F4E9C','#E07B00','#2E8B57','#B7245C','#00868B','#7D5BA6','#A0722B'];
-
-var muni=MUNIS[0], ola=OLAS[OLAS.length-1], base='total', partidoComp='MORENA';
-var charts={};
-
-/* ============ ESTADÍSTICA ============ */
-function meProp(p,n,z){n=n||600;z=z||1.96;return 100*z*Math.sqrt((p/100)*(1-p/100)/n);}
-function meDif(p1,p2,n,z){n=n||600;z=z||1.96;var a=p1/100,b=p2/100;
-  return 100*z*Math.sqrt(Math.max(0,(a+b-(a-b)*(a-b))/n));}
-
-/* ============ ACCESO A DATOS ============
-   Cada municipio arranca en una ola distinta (jul-25 o ago-25). Nada puede
-   asumir OLAS[0]: eso vaciaba la gráfica de deltas y el KPI de movimiento. */
-function serieP(m,p){return (D.partido[m]&&D.partido[m][p])?D.partido[m][p]:{};}
-function olasDe(m){var s=serieP(m,'MORENA');
-  return OLAS.filter(function(o){return s[o]!==null&&s[o]!==undefined;});}
-function primeraOla(m){return olasDe(m)[0];}
-function ultimaOla(m){var k=olasDe(m);return k[k.length-1];}
-function val(m,p,o){var v=serieP(m,p)[o];return (v===null||v===undefined)?null:v;}
-function olaEfectiva(m,o){var s=serieP(m,'MORENA');
-  return (s[o]!==null&&s[o]!==undefined)?o:ultimaOla(m);}
-function est(m,tp,pc,a,o){return D.estatus[m+'|'+tp+'|'+pc+'|'+a+'|'+o]||'';}
-function marca(m,tp,pc,a,o){return est(m,tp,pc,a,o)==='PONDERADO'?'*':'';}
-
-function rankMuni(m,o){var oe=olaEfectiva(m,o);
-  return PARTIDOS.map(function(p){return {p:p,v:val(m,p,oe)};})
-    .filter(function(x){return x.v!==null;}).sort(function(a,b){return b.v-a.v;});}
-function holgura(m,o){var r=rankMuni(m,o);
-  if(r.length<2)return null;
-  var dif=r[0].v-r[1].v, me=meDif(r[0].v,r[1].v);
-  return {muni:m,p1:r[0],p2:r[1],dif:dif,me:me,holgura:dif-me};}
-
-var MES=['','ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
-function fmtOla(o){var a=o.split('-');return MES[+a[1]]+' '+a[0].slice(2);}
-function corto(m){return m.replace('San Pedro ','').replace(' de Zúñiga','');}
-function kill(k){if(charts[k]){charts[k].destroy();delete charts[k];}}
-
-/* ============ PLUGIN: BARRAS DE ERROR (IC 95 %) ============
-   Dibuja el intervalo real sobre cada barra. Antes el gráfico anunciaba un IC
-   que nunca se pintaba, y el dataset falso que lo simulaba rompía la escala. */
-var pluginIC={
-  id:'barrasIC',
-  afterDatasetsDraw:function(chart,args,opts){
-    var ic=(opts&&opts.ic)||[]; if(!ic.length)return;
-    var meta=chart.getDatasetMeta(0), ex=chart.ctx, esH=chart.options.indexAxis==='y';
-    var esc=esH?chart.scales.x:chart.scales.y;
-    ex.save(); ex.strokeStyle=css('--ink-soft'); ex.lineWidth=1.4; ex.globalAlpha=.85;
-    meta.data.forEach(function(barra,i){
-      if(ic[i]===null||ic[i]===undefined)return;
-      var c=chart.data.datasets[0].data[i];
-      var lo=esc.getPixelForValue(Math.max(0,c-ic[i])), hi=esc.getPixelForValue(c+ic[i]), t=9;
-      ex.beginPath();
-      if(esH){var y=barra.y;
-        ex.moveTo(lo,y); ex.lineTo(hi,y);
-        ex.moveTo(lo,y-t/2); ex.lineTo(lo,y+t/2);
-        ex.moveTo(hi,y-t/2); ex.lineTo(hi,y+t/2);
-      }else{var x=barra.x;
-        ex.moveTo(x,lo); ex.lineTo(x,hi);
-        ex.moveTo(x-t/2,lo); ex.lineTo(x+t/2,lo);
-        ex.moveTo(x-t/2,hi); ex.lineTo(x+t/2,hi);}
-      ex.stroke();
-    });
-    ex.restore();
-  }
-};
-
-/* PRI (#E31B23) y PT (#E30613) son casi el mismo rojo: el PT se traza con
-   rayado diagonal para que la lectura no dependa del tono. */
-function trama(color){
-  var c=document.createElement('canvas'); c.width=8; c.height=8;
-  var x=c.getContext('2d');
-  x.fillStyle=color; x.fillRect(0,0,8,8);
-  x.strokeStyle='rgba(255,255,255,.8)'; x.lineWidth=2.4;
-  x.beginPath(); x.moveTo(-2,10); x.lineTo(10,-2); x.moveTo(2,14); x.lineTo(14,2); x.stroke();
-  return x.createPattern(c,'repeat');
-}
-function relleno(p){return p==='PT'?trama(COL('PT')):COL(p);}
-
-/* Etiquetas de porcentaje sobre los segmentos de la dona. */
-var pluginDona={
-  id:'etDona',
-  afterDatasetsDraw:function(chart){
-    var ex=chart.ctx, meta=chart.getDatasetMeta(0);
-    var tot=chart.data.datasets[0].data.reduce(function(a,b){return a+b;},0);
-    ex.save(); ex.font='600 11px Poppins,Arial'; ex.textAlign='center'; ex.textBaseline='middle';
-    meta.data.forEach(function(arc,i){
-      var v=chart.data.datasets[0].data[i];
-      if(v/tot<0.045)return;
-      var pos=arc.getCenterPoint();
-      ex.strokeStyle='rgba(0,0,0,.5)'; ex.lineWidth=2.8;
-      ex.strokeText(v.toFixed(1)+'%',pos.x,pos.y);
-      ex.fillStyle='#fff'; ex.fillText(v.toFixed(1)+'%',pos.x,pos.y);
-    });
-    ex.restore();
-  }
-};
-
-function opts(extra){
-  var g=css('--grid-line'), t=css('--muted');
-  var o={responsive:true,maintainAspectRatio:false,
-    animation:{duration:650,easing:'easeOutQuart'},
-    interaction:{mode:'index',intersect:false},
-    plugins:{legend:{labels:{color:t,font:{family:'Inter',size:11},usePointStyle:true,boxWidth:7}},
-             tooltip:{backgroundColor:css('--brand-deep'),padding:9,cornerRadius:5}},
-    scales:{y:{grid:{color:g},border:{display:false},
-               ticks:{color:t,font:{family:'Inter',size:11},callback:function(v){return v+'%';}}},
-            x:{grid:{display:false},border:{color:g},
-               ticks:{color:t,font:{family:'Inter',size:10.5}}}}};
-  if(extra){for(var k in extra)o[k]=extra[k];}
-  return o;
-}
-function ejeMun(){return {grid:{display:false},border:{color:css('--grid-line')},
-  ticks:{color:css('--ink'),font:{size:10.5,weight:'600'},maxRotation:34,minRotation:0}};}
-function ejePct(){return {grid:{color:css('--grid-line')},border:{display:false},
-  ticks:{color:css('--muted'),callback:function(v){return v+'%';}}};}
-function leyendaAbajo(sz){return {position:'bottom',
-  labels:{color:css('--muted'),usePointStyle:true,boxWidth:7,font:{size:sz||11}}};}
-
-/* ============ PANORAMA ============ */
-function sparkline(m,p){
-  var os=olasDe(m), vs=os.map(function(o){return val(m,p,o);}).filter(function(v){return v!==null;});
-  if(vs.length<3)return '';
-  var w=104,h=26,mn=Math.min.apply(null,vs),mx=Math.max.apply(null,vs),r=(mx-mn)||1;
-  var pts=vs.map(function(v,i){return [(i/(vs.length-1))*w, h-((v-mn)/r)*(h-4)-2];});
-  var d=pts.map(function(q,i){return (i?'L':'M')+q[0].toFixed(1)+' '+q[1].toFixed(1);}).join(' ');
-  var sube=vs[vs.length-1]>=vs[0], c=sube?css('--ok'):css('--risk');
-  return '<svg width="'+w+'" height="'+h+'" viewBox="0 0 '+w+' '+h+'" aria-hidden="true">'+
-    '<path d="'+d+'" fill="none" stroke="'+c+'" stroke-width="1.8" stroke-linejoin="round"/>'+
-    '<circle cx="'+pts[pts.length-1][0].toFixed(1)+'" cy="'+pts[pts.length-1][1].toFixed(1)+
-    '" r="2.4" fill="'+c+'"/></svg>';
-}
-
-function baseAjustada(m,o){
-  var oe=olaEfectiva(m,o);
-  var r=ORD.map(function(p){return {p:p,v:val(m,p,oe)};}).filter(function(x){return x.v!==null;});
-  if(base==='efectivo'){
-    var ndo=r.filter(function(x){return x.p==='AÚN NO DECIDE';})[0];
-    var nd=ndo?ndo.v:0;
-    r=r.filter(function(x){return x.p!=='AÚN NO DECIDE';})
-       .map(function(x){return {p:x.p,v:x.v*100/(100-nd)};});
-  }
-  return r.sort(function(a,b){return b.v-a.v;});
-}
-
-function kpis(){
-  var oe=olaEfectiva(muni,ola), h=holgura(muni,ola);
-  var r=baseAjustada(muni,ola), p1=r[0];
-  var nd=val(muni,'AÚN NO DECIDE',oe)||0;
-  var o0=primeraOla(muni), v0=val(muni,h.p1.p,o0);
-  var delta=(v0===null)?null:(h.p1.v-v0);
-  var emp=h.holgura<=0;
-  var items=[
-    ['Puntero','<span class="dot'+(p1.p==='PT'?' rayado':'')+'" style="background:'+COL(p1.p)+'"></span>'+p1.p,
-      p1.v.toFixed(1)+'% de intención'+(base==='efectivo'?' (voto efectivo*)':''),''],
-    ['Ventaja sobre el 2.º',h.dif.toFixed(1)+' pp','error de la diferencia ±'+h.me.toFixed(1)+' pp',''],
-    ['Lectura estadística',emp?'Empate técnico':'Ventaja significativa',
-      emp?(h.p1.p+' y '+h.p2.p+' son indistinguibles al 95 %')
-         :(h.p1.p+' supera a '+h.p2.p+' al 95 % de confianza'),''],
-    ['Voto no declarado',nd.toFixed(1)+'%',nd>15?'bolsa amplia sin asignar':'bolsa contenida',''],
-    ['Movimiento del puntero',(delta===null?'—':(delta>0?'+':'')+delta.toFixed(1)+' pp'),
-      'desde '+fmtOla(o0)+' hasta '+fmtOla(oe),sparkline(muni,h.p1.p)]
-  ];
-  document.getElementById('kpis').innerHTML=items.map(function(a){
-    return '<div class="kpi aparece"><div class="lab">'+a[0]+'</div><div class="val">'+a[1]+
-      '</div><div class="sub">'+a[2]+'</div>'+a[3]+'</div>';}).join('');
-  document.getElementById('alerta').innerHTML= emp
-    ? '<b>Plaza en disputa.</b> En '+muni+', la diferencia de '+h.dif.toFixed(1)+' pp entre '+
-      h.p1.p+' y '+h.p2.p+' no supera el error de la diferencia (±'+h.me.toFixed(1)+
-      ' pp). Tratarla como competida, no como ganada.'
-    : 'En '+muni+', '+h.p1.p+' aventaja a '+h.p2.p+' por '+h.dif.toFixed(1)+
-      ' pp, por encima del error de la diferencia (±'+h.me.toFixed(1)+
-      ' pp). La ventaja es estadísticamente significativa al 95 %.';
-}
-
-function rank(){
-  var r=baseAjustada(muni,ola);
-  var ic=r.map(function(x){return meProp(x.v);});
-  var mx=Math.max.apply(null,r.map(function(x,i){return x.v+ic[i];}));
-  kill('r');
-  charts.r=new Chart(document.getElementById('cRank'),{type:'bar',
-    data:{labels:r.map(function(x){return x.p;}),
-      datasets:[{data:r.map(function(x){return x.v;}),
-        backgroundColor:r.map(function(x){return relleno(x.p);}),
-        borderRadius:3,barPercentage:.68}]},
-    options:opts({indexAxis:'y',
-      scales:{x:{min:0,max:Math.ceil(mx/5)*5,grid:{color:css('--grid-line')},border:{display:false},
-                 ticks:{color:css('--muted'),callback:function(v){return v+'%';},font:{size:11}}},
-              y:{grid:{display:false},border:{display:false},
-                 ticks:{color:css('--ink'),font:{family:'Poppins',size:12,weight:'600'}}}},
-      plugins:{legend:{display:false},barrasIC:{ic:ic},
-        tooltip:{backgroundColor:css('--brand-deep'),padding:9,cornerRadius:5,
-          callbacks:{label:function(c){var v=c.raw,e=meProp(v);
-            return ' '+v.toFixed(1)+'%   IC 95 %: '+(v-e).toFixed(1)+' – '+(v+e).toFixed(1);}}}}}),
-    plugins:[pluginIC]});
-}
-
-function track(){
-  var os=olasDe(muni);
-  document.getElementById('tTrack').textContent=
-    os.length+' meses de tracking: la evolución es el dato, no la foto';
-  kill('t');
-  charts.t=new Chart(document.getElementById('cTrack'),{type:'line',
-    data:{labels:os.map(fmtOla),datasets:ORD.map(function(p){
-      return {label:p,data:os.map(function(o){return val(muni,p,o);}),
-        borderColor:COL(p),backgroundColor:COL(p),
-        borderWidth:p==='AÚN NO DECIDE'?2:2.3,
-        borderDash:p==='AÚN NO DECIDE'?[5,3]:(p==='PT'?[2,2]:[]),
-        pointRadius:2.3,pointHoverRadius:5,tension:.25,spanGaps:true};})},
-    options:opts({plugins:{legend:leyendaAbajo(11),
-      tooltip:{backgroundColor:css('--brand-deep'),padding:9,cornerRadius:5,
-        callbacks:{label:function(c){
-          return ' '+c.dataset.label+': '+(c.parsed.y===null?'—':
-            c.parsed.y.toFixed(1)+'%'+marca(muni,'INTENCION_PARTIDO','None',c.dataset.label,os[c.dataIndex]));}}}},
-      scales:{y:ejePct(),
-              x:{grid:{display:false},border:{color:css('--grid-line')},
-                 ticks:{color:css('--muted'),maxRotation:45,minRotation:0,autoSkipPadding:8,font:{size:10}}}}})});
-}
-
-/* ============ LOS SIETE MUNICIPIOS ============ */
-function ordenMunis(){
-  return MUNIS.map(function(m){return holgura(m,ola);}).filter(Boolean)
-    .sort(function(a,b){return b.p1.v-a.p1.v;}).map(function(h){return h.muni;});
-}
-
-function termometro(){
-  var hs=MUNIS.map(function(m){return holgura(m,ola);}).filter(Boolean)
-    .sort(function(a,b){return a.holgura-b.holgura;});
-  var mx=Math.max.apply(null,hs.map(function(h){return Math.max(h.dif,h.me);}))*1.14;
-  var cont=document.getElementById('termo');
-  cont.innerHTML=hs.map(function(h){
-    var c=h.holgura<=0?css('--risk'):(h.holgura<5?css('--warn'):css('--ok'));
-    var pct=Math.max(2,(h.dif/mx)*100), um=(h.me/mx)*100;
-    var et=h.holgura<=0?'empate técnico':(h.holgura.toFixed(1)+' pp de holgura');
-    return '<div class="termo-fila"><div class="termo-mun">'+h.muni+
-      '<div style="font-size:10.5px;color:var(--muted);font-weight:400">'+h.p1.p+' sobre '+h.p2.p+'</div></div>'+
-      '<div class="termo-pista"><div class="termo-barra" data-w="'+pct.toFixed(1)+'" style="background:'+c+'"></div>'+
-      '<div class="termo-umbral" style="left:'+um.toFixed(1)+'%"></div></div>'+
-      '<div class="termo-et" style="color:'+c+'">'+h.dif.toFixed(1)+' pp<br>'+
-      '<span style="font-weight:400;color:var(--muted);font-size:10px">'+et+'</span></div></div>';
-  }).join('');
-  requestAnimationFrame(function(){
-    var bs=cont.querySelectorAll('.termo-barra');
-    for(var i=0;i<bs.length;i++)bs[i].style.width=bs[i].getAttribute('data-w')+'%';
-  });
-}
-
-function muniPartido(){
-  var ms=ordenMunis();
-  kill('mp');
-  charts.mp=new Chart(document.getElementById('cMuniPartido'),{type:'bar',
-    data:{labels:ms.map(corto),datasets:ORD.map(function(p){
-      return {label:p,data:ms.map(function(m){return val(m,p,olaEfectiva(m,ola));}),
-        backgroundColor:relleno(p),borderRadius:2,
-        borderColor:p==='PT'?COL('PT'):'transparent',borderWidth:p==='PT'?1:0};})},
-    options:opts({plugins:{legend:leyendaAbajo(11),
-      tooltip:{backgroundColor:css('--brand-deep'),padding:9,cornerRadius:5,
-        callbacks:{label:function(c){return ' '+c.dataset.label+': '+
-          (c.parsed.y===null?'no se mide':c.parsed.y.toFixed(1)+'%');}}}},
-      scales:{y:ejePct(),x:ejeMun()}})});
-}
-
-function ventaja(){
-  var hs=MUNIS.map(function(m){return holgura(m,ola);}).filter(Boolean)
-    .sort(function(a,b){return b.dif-a.dif;});
-  kill('v');
-  charts.v=new Chart(document.getElementById('cVentaja'),{
-    data:{labels:hs.map(function(h){return corto(h.muni);}),
-      datasets:[
-        {type:'bar',label:'Ventaja del puntero',data:hs.map(function(h){return h.dif;}),
-         backgroundColor:hs.map(function(h){
-           return h.holgura<=0?css('--risk'):(h.holgura<5?css('--warn'):css('--ok'));}),
-         borderRadius:3,barPercentage:.62,order:2},
-        {type:'line',label:'Margen de error de la diferencia',data:hs.map(function(h){return h.me;}),
-         borderColor:css('--ink-soft'),borderDash:[5,4],borderWidth:1.8,
-         pointRadius:3,pointBackgroundColor:css('--surface'),fill:false,tension:0,order:1}]},
-    options:opts({plugins:{legend:leyendaAbajo(11),
-      tooltip:{backgroundColor:css('--brand-deep'),padding:9,cornerRadius:5,
-        callbacks:{afterBody:function(items){var h=hs[items[0].dataIndex];
-          return h.holgura<=0?'Empate técnico: la ventaja cabe dentro del error.'
-                             :'Ventaja significativa al 95 %.';}}}},
-      scales:{y:{grid:{color:css('--grid-line')},border:{display:false},
-                 ticks:{color:css('--muted'),callback:function(v){return v+' pp';}}},
-              x:ejeMun()}})});
-}
-
-function noDeclarado(){
-  var ds=MUNIS.map(function(m){return {m:m,v:val(m,'AÚN NO DECIDE',olaEfectiva(m,ola))};})
-    .filter(function(x){return x.v!==null;}).sort(function(a,b){return b.v-a.v;});
-  var prom=ds.reduce(function(a,b){return a+b.v;},0)/ds.length;
-  kill('nd');
-  charts.nd=new Chart(document.getElementById('cNoDecl'),{
-    data:{labels:ds.map(function(x){return corto(x.m);}),
-      datasets:[
-        {type:'bar',label:'Voto no declarado',data:ds.map(function(x){return x.v;}),
-         backgroundColor:ds.map(function(x){return x.v>prom?css('--nodec'):css('--otros');}),
-         borderRadius:3,barPercentage:.62,order:2},
-        {type:'line',label:'Promedio de las siete plazas ('+prom.toFixed(1)+'%)',
-         data:ds.map(function(){return prom;}),borderColor:css('--accent'),
-         borderDash:[6,4],borderWidth:1.8,pointRadius:0,fill:false,order:1}]},
-    options:opts({plugins:{legend:leyendaAbajo(11)},
-      scales:{y:ejePct(),x:ejeMun()}})});
-}
-
-function hexA(hex,a){
-  hex=(hex||'#707070').trim();
-  if(hex.charAt(0)!=='#'||hex.length<7)return 'rgba(112,112,112,'+a+')';
-  var r=parseInt(hex.substr(1,2),16),g=parseInt(hex.substr(3,2),16),b=parseInt(hex.substr(5,2),16);
-  return 'rgba('+r+','+g+','+b+','+a.toFixed(3)+')';
-}
-function matrizCalor(){
-  var ms=ordenMunis(), vs=[];
-  ms.forEach(function(m){PARTIDOS.forEach(function(p){
-    var v=val(m,p,olaEfectiva(m,ola)); if(v!==null)vs.push(v);});});
-  var mx=Math.max.apply(null,vs);
-  var h='<table class="calor"><tr><th>Municipio</th>'+
-    PARTIDOS.map(function(p){return '<th style="text-align:center;color:'+COL(p)+'">'+p+'</th>';}).join('')+'</tr>';
-  ms.forEach(function(m){
-    h+='<tr><td>'+m+'</td>';
-    PARTIDOS.forEach(function(p){
-      var oe=olaEfectiva(m,ola), v=val(m,p,oe);
-      if(v===null){h+='<td style="color:var(--muted)">—</td>';return;}
-      var a=0.10+0.85*(v/mx), claro=a>0.55;
-      h+='<td style="background:'+hexA(COL(p),a)+';color:'+(claro?'#fff':'var(--ink)')+
-        '" title="'+m+' · '+p+' · '+fmtOla(oe)+'">'+v.toFixed(1)+
-        marca(m,'INTENCION_PARTIDO','None',p,oe)+'</td>';
-    });
-    h+='</tr>';
-  });
-  h+='</table><p style="font-size:11px;color:var(--muted);margin:9px 0 0">Intensidad proporcional al porcentaje de intención dentro de la matriz. Las celdas con asterisco son datos ponderados. Un guion indica que la fuente no mide ese partido en esa plaza.</p>';
-  document.getElementById('calor').innerHTML=h;
-}
-
-function reeleccion(){
-  var ds=MUNIS.filter(function(m){return D.reeleccion[m]&&D.reeleccion[m]['NO'];})
-    .map(function(m){
-      var s=D.reeleccion[m]['NO'];
-      var ks=OLAS.filter(function(o){return s[o]!==null&&s[o]!==undefined;});
-      var oe=(s[ola]!==null&&s[ola]!==undefined)?ola:ks[ks.length-1];
-      return {m:m,v:s[oe],o:oe};
-    }).filter(function(x){return x.v!==null&&x.v!==undefined;})
-      .sort(function(a,b){return b.v-a.v;});
-  var prom=ds.reduce(function(a,b){return a+b.v;},0)/ds.length;
-  kill('re');
-  charts.re=new Chart(document.getElementById('cReelec'),{type:'bar',
-    data:{labels:ds.map(function(x){return corto(x.m);}),
-      datasets:[{label:'Responde que NO',data:ds.map(function(x){return x.v;}),
-        backgroundColor:ds.map(function(x){return x.v>prom+12?css('--risk'):css('--brand');}),
-        borderRadius:3,barPercentage:.62}]},
-    options:opts({plugins:{legend:{display:false},
-      tooltip:{backgroundColor:css('--brand-deep'),padding:9,cornerRadius:5,
-        callbacks:{label:function(c){return ' '+c.parsed.y.toFixed(1)+' % rechaza la reelección';},
-          afterBody:function(it){return 'Ola: '+fmtOla(ds[it[0].dataIndex].o);}}}},
-      scales:{y:{min:0,max:100,grid:{color:css('--grid-line')},border:{display:false},
-                 ticks:{color:css('--muted'),callback:function(v){return v+'%';}}},
-              x:ejeMun()}})});
-}
-
-function dona(){
-  var oe=olaEfectiva(muni,ola);
-  var r=ORD.map(function(p){return {p:p,v:val(muni,p,oe)};})
-    .filter(function(x){return x.v!==null&&x.v>0;});
-  kill('o');
-  charts.o=new Chart(document.getElementById('cDona'),{type:'doughnut',
-    data:{labels:r.map(function(x){return x.p;}),
-      datasets:[{data:r.map(function(x){return x.v;}),
-        backgroundColor:r.map(function(x){return relleno(x.p);}),
-        borderColor:css('--surface'),borderWidth:2}]},
-    options:{responsive:true,maintainAspectRatio:false,cutout:'54%',
-      animation:{duration:650},
-      plugins:{legend:{position:'right',
-          labels:{color:css('--muted'),usePointStyle:true,boxWidth:7,font:{size:11}}},
-        tooltip:{backgroundColor:css('--brand-deep'),padding:9,cornerRadius:5,
-          callbacks:{label:function(c){return ' '+c.label+': '+c.parsed.toFixed(1)+'%';}}}}},
-    plugins:[pluginDona]});
-}
-
-/* ============ MOVIMIENTO EN EL TIEMPO ============ */
-function comparaPartido(){
-  kill('cp');
-  charts.cp=new Chart(document.getElementById('cComparaPartido'),{type:'line',
-    data:{labels:OLAS.map(fmtOla),datasets:MUNIS.map(function(m,i){
-      return {label:m,data:OLAS.map(function(o){return val(m,partidoComp,o);}),
-        borderColor:COLM[i],backgroundColor:COLM[i],borderWidth:2.1,
-        pointRadius:2.2,pointHoverRadius:5,tension:.25,spanGaps:true};})},
-    options:opts({plugins:{legend:leyendaAbajo(10.5),
-      tooltip:{backgroundColor:css('--brand-deep'),padding:9,cornerRadius:5,
-        callbacks:{label:function(c){return ' '+c.dataset.label+': '+
-          (c.parsed.y===null?'—':c.parsed.y.toFixed(1)+'%');}}}},
-      scales:{y:ejePct(),
-              x:{grid:{display:false},border:{color:css('--grid-line')},
-                 ticks:{color:css('--muted'),maxRotation:45,autoSkipPadding:8,font:{size:10}}}}})});
-}
-
-function delta(){
-  /* La variación se mide contra la PRIMERA OLA DE CADA PLAZA, no contra OLAS[0]:
-     Guadalajara arranca en ago-25 y Tlajomulco en jul-25. */
-  var ds=MUNIS.map(function(m){
-    var o0=primeraOla(m), o1=ultimaOla(m), h=holgura(m,o1);
-    if(!h)return null;
-    var a=val(m,h.p1.p,o0), b=val(m,h.p1.p,o1);
-    return (a===null||b===null)?null:{m:m,p:h.p1.p,v:b-a,o0:o0,o1:o1};
-  }).filter(Boolean).sort(function(a,b){return b.v-a.v;});
-  kill('d');
-  charts.d=new Chart(document.getElementById('cDelta'),{type:'bar',
-    data:{labels:ds.map(function(x){return corto(x.m);}),
-      datasets:[{data:ds.map(function(x){return x.v;}),
-        backgroundColor:ds.map(function(x){return x.v>=0?css('--ok'):css('--risk');}),
-        borderRadius:3,barPercentage:.62}]},
-    options:opts({indexAxis:'y',
-      plugins:{legend:{display:false},
-        tooltip:{backgroundColor:css('--brand-deep'),padding:9,cornerRadius:5,
-          callbacks:{label:function(c){var x=ds[c.dataIndex];
-            return ' '+x.p+': '+(x.v>0?'+':'')+x.v.toFixed(1)+' pp entre '+
-              fmtOla(x.o0)+' y '+fmtOla(x.o1);}}}},
-      scales:{x:{grid:{color:css('--grid-line')},border:{display:false},
-                 ticks:{color:css('--muted'),callback:function(v){return (v>0?'+':'')+v+' pp';}}},
-              y:{grid:{display:false},border:{display:false},
-                 ticks:{color:css('--ink'),font:{size:11,weight:'600'}}}}})});
-}
-
-function noDec(){
-  kill('n');
-  charts.n=new Chart(document.getElementById('cNoDec'),{type:'line',
-    data:{labels:OLAS.map(fmtOla),datasets:MUNIS.map(function(m,i){
-      return {label:m,data:OLAS.map(function(o){return val(m,'AÚN NO DECIDE',o);}),
-        borderColor:COLM[i],backgroundColor:COLM[i],borderWidth:2,
-        pointRadius:2,pointHoverRadius:5,tension:.25,spanGaps:true,fill:false};})},
-    options:opts({plugins:{legend:leyendaAbajo(10.5)},
-      scales:{y:ejePct(),
-              x:{grid:{display:false},border:{color:css('--grid-line')},
-                 ticks:{color:css('--muted'),maxRotation:45,autoSkipPadding:8,font:{size:10}}}}})});
-}
-
-/* ============ INTERNAS ============ */
-function olaInterna(m,part){
-  var pc=D.precand[m]&&D.precand[m][part]; if(!pc)return null;
-  var ks=Object.keys(pc); if(!ks.length)return null;
-  var s=pc[ks[0]];
-  if(s[ola]!==null&&s[ola]!==undefined)return ola;
-  var disp=OLAS.filter(function(o){return s[o]!==null&&s[o]!==undefined;});
-  return disp.length?disp[disp.length-1]:null;
-}
-function filasInterna(m,part,oe){
-  var pc=D.precand[m][part];
-  return Object.keys(pc).filter(function(a){return a!=='OTRO'&&a!=='AÚN NO DECIDE';})
-    .map(function(a){return {a:a,v:pc[a][oe]};})
-    .filter(function(x){return x.v!==null&&x.v!==undefined;})
-    .sort(function(x,y){return y.v-x.v;});
-}
-
-function internas(){
-  var ms=MUNIS.slice();
-  var ds=['PAN','PRI','MORENA','MC','PVEM'].map(function(part){
-    return {label:part,
-      data:ms.map(function(m){
-        var oe=olaInterna(m,part); if(!oe)return null;
-        var r=filasInterna(m,part,oe);
-        return r.length<2?null:+(r[0].v-r[1].v).toFixed(1);
-      }),
-      backgroundColor:relleno(part),borderRadius:2,
-      borderColor:part==='PT'?COL('PT'):'transparent',borderWidth:0};
-  });
-  kill('i');
-  charts.i=new Chart(document.getElementById('cInternas'),{type:'bar',
-    data:{labels:ms.map(corto),datasets:ds},
-    options:opts({plugins:{legend:leyendaAbajo(11),
-      tooltip:{backgroundColor:css('--brand-deep'),padding:9,cornerRadius:5,
-        callbacks:{label:function(c){
-          if(c.parsed.y===null)return ' '+c.dataset.label+': no se mide en esta plaza';
-          return ' '+c.dataset.label+': '+c.parsed.y.toFixed(1)+' pp del 1.º sobre el 2.º';}}}},
-      scales:{y:{grid:{color:css('--grid-line')},border:{display:false},
-                 ticks:{color:css('--muted'),callback:function(v){return v+' pp';}}},
-              x:ejeMun()}})});
-}
-
-function tabla(){
-  var pc=D.precand[muni]||{}, h='';
-  Object.keys(pc).forEach(function(part){
-    var oe=olaInterna(muni,part); if(!oe)return;
-    var filas=filasInterna(muni,part,oe); if(!filas.length)return;
-    var u1=val(muni,part,olaEfectiva(muni,ola));
-    var t=filas[0].v, s=filas[1]?filas[1].v:0;
-    var abierta=(t-s)<=meDif(t,s);
-    h+='<table style="margin-bottom:17px"><tr><th style="width:44%">'+
-      '<span class="dot'+(part==='PT'?' rayado':'')+'" style="background:'+COL(part)+'"></span>'+part+
-      '<span class="tag '+(abierta?'warn':'')+'">'+(abierta?'interna abierta':'candidato natural')+
-      '</span></th><th>Preferencia interna (U2)</th><th>Voto del partido (U1)</th>'+
-      '<th>Voto efectivo estimado *</th></tr>';
-    filas.forEach(function(f){
-      var ef=(u1===null)?null:f.v*u1/100;
-      h+='<tr><td>'+f.a+'</td><td class="n">'+f.v.toFixed(1)+'%</td><td>'+
-        (u1===null?'—':u1.toFixed(1)+'%')+'</td><td class="n">'+
-        (ef===null?'—':ef.toFixed(1)+'%')+' <span class="est">*</span></td></tr>';
-    });
-    h+='</table>';
-  });
-  if(!h)h='<p style="color:var(--muted);font-size:12.5px">La fuente no mide internas de partido en esta plaza.</p>';
-  h+='<p style="font-size:11.3px;color:var(--muted);margin:0">El <b>voto efectivo estimado</b> (U2 × U1 ÷ 100) es una métrica derivada por esta elaboración, no publicada por la fuente.</p>';
-  document.getElementById('tabla').innerHTML=h;
-}
-
-/* ============ TRAZABILIDAD ============ */
-function traza(){
-  var c=M.conteo, t=c.LITERAL+c.PONDERADO+c.AUSENTE;
-  function pct(x){return (100*x/t).toFixed(1)+'%';}
-  document.getElementById('traza').innerHTML=
-    '<p class="nota">Toda cifra del tablero se clasifica por origen. Ninguna se rellenó por analogía con otro mes o municipio, ni se ajustó para forzar el cierre al 100 %.</p>'+
-    '<table><tr><th>Origen del dato</th><th>Celdas</th><th>Proporción</th><th style="width:46%">Qué significa</th></tr>'+
-    '<tr><td><span class="dot" style="background:'+css('--ok')+'"></span>Literal</td><td class="n">'+c.LITERAL+'</td><td>'+pct(c.LITERAL)+'</td>'+
-    '<td style="text-align:left">Valor impreso en la lámina y transcrito sin transformación.</td></tr>'+
-    '<tr><td><span class="dot" style="background:'+css('--warn')+'"></span>Ponderado *</td><td class="n">'+c.PONDERADO+'</td><td>'+pct(c.PONDERADO)+'</td>'+
-    '<td style="text-align:left">Reconstruido de la gráfica de tracking, que no publica tabla de valores. Error máximo de calibración: 0.257 pp, frente a ±4.3 pp de error muestral de la encuesta.</td></tr>'+
-    '<tr><td><span class="dot" style="background:'+css('--risk')+'"></span>Ausente</td><td class="n">'+c.AUSENTE+'</td><td>'+pct(c.AUSENTE)+'</td>'+
-    '<td style="text-align:left">Marcador ocluido por otra serie del mismo color. No resuelto y no imputado. Listado en la hoja PENDIENTES del libro de auditoría.</td></tr>'+
-    '<tr><td><b>Control de cierre</b></td><td class="n">'+M.cierre+'</td><td>100%</td>'+
-    '<td style="text-align:left">Olas de intención de voto que suman 100 % sin que se impusiera la normalización. Es la validación independiente de la reconstrucción.</td></tr></table>';
-}
-
-/* ============ ORQUESTACIÓN ============ */
-function render(){
-  var oe=olaEfectiva(muni,ola);
-  document.getElementById('stamp').textContent=
-    'Massive Caller · ola '+fmtOla(oe)+' · corte del estudio '+fmtOla(M.corte)+
-    ' · N='+M.n+' por municipio · M.E. ±'+M.me+'% · 7 municipios · 82 láminas';
-  kpis();rank();track();
-  termometro();muniPartido();ventaja();noDeclarado();matrizCalor();reeleccion();dona();
-  comparaPartido();delta();noDec();
-  internas();tabla();traza();
-}
-
-var selM=document.getElementById('muni'), selO=document.getElementById('ola'),
-    selP=document.getElementById('selPartido');
-MUNIS.forEach(function(m){selM.add(new Option(m,m));});
-OLAS.slice().reverse().forEach(function(o){selO.add(new Option('Ola: '+fmtOla(o),o));});
-PARTIDOS.forEach(function(p){selP.add(new Option('Partido: '+p,p));});
-selM.value=muni; selO.value=ola; selP.value=partidoComp;
-selM.onchange=function(e){muni=e.target.value;render();};
-selO.onchange=function(e){ola=e.target.value;render();};
-selP.onchange=function(e){partidoComp=e.target.value;comparaPartido();};
-document.getElementById('btnBase').onclick=function(){
-  base=(base==='total')?'efectivo':'total';
-  this.textContent=(base==='total')?'Base: total':'Base: voto efectivo *';
-  this.classList.toggle('on'); kpis(); rank();
-};
-document.getElementById('btnPrint').onclick=function(){window.print();};
-document.getElementById('btnTema').onclick=function(){
-  var osc=document.documentElement.getAttribute('data-tema')==='oscuro';
-  if(osc)document.documentElement.removeAttribute('data-tema');
-  else document.documentElement.setAttribute('data-tema','oscuro');
-  try{localStorage.setItem('jal2027-tema',osc?'claro':'oscuro');}catch(e){}
-  render();  /* los colores salen de los tokens: hay que repintar */
-};
-
-var cabs=document.querySelectorAll('.panel-cab');
-for(var i=0;i<cabs.length;i++){
-  cabs[i].addEventListener('click',function(){
-    var s=this.parentElement;
-    s.classList.toggle('cerrado');
-    if(!s.classList.contains('cerrado'))
-      Object.keys(charts).forEach(function(k){charts[k].resize();});
-  });
-}
-
-var SECS=[['s-panorama','Panorama'],['s-comparativo','Los 7 municipios'],
-          ['s-evolucion','Movimiento'],['s-internas','Internas'],['s-traza','Trazabilidad']];
-document.getElementById('nav').innerHTML=SECS.map(function(s){
-  return '<a href="#'+s[0]+'" data-s="'+s[0]+'">'+s[1]+'</a>';}).join('');
-if(window.IntersectionObserver){
-  var obs=new IntersectionObserver(function(es){
-    es.forEach(function(e){
-      if(e.isIntersecting){
-        var as=document.querySelectorAll('nav.cinta a');
-        for(var j=0;j<as.length;j++)
-          as[j].classList.toggle('activo',as[j].getAttribute('data-s')===e.target.id);
-      }
-    });
-  },{rootMargin:'-130px 0px -65% 0px'});
-  SECS.forEach(function(s){obs.observe(document.getElementById(s[0]));});
-}
-
-render();
-})();
-</script>
 </body>
 </html>
